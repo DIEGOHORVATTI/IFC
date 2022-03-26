@@ -9,7 +9,7 @@
     <p><b>➥ Curso:</b> CCCC-CH 1º</p>
     <p><b>➥ info:</b> Tatefa Aula 3, página18</p>
     <p><b>➥ Disciplina:</b> Algaritimos</p>
-    <p><b>➥ repo:</b> https:github.com/DIEGOHORVATTI/IFC/aula_3</p>
+    <p><b>➥ repo:</b> https://github.com/DIEGOHORVATTI/IFC/tree/main/aula_3</p>
   </div>
 </div>
 <hr />
