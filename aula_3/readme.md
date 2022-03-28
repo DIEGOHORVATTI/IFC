@@ -70,5 +70,5 @@
 <p align="left">
   Abra a pasta do projeto no terminal exemplo cd ./Dowloads/ifc/aula_3/<br />
   execute o instalador dos pacotes esterno <pre>yarn install ou npm install</pre><br />
-  Depois é só iniciar o programa com <pre>node 1.js etc...</pre>
+  Depois é só iniciar o programa com <pre>node index.js </pre>
 </p>
