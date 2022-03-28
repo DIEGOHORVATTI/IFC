@@ -2,12 +2,20 @@
 Determine o valor das expressões lógicas abaixo, considerando que 
 A, B e C contêm, respectivamente, 2, 7, 3.5 e que para a variável 
 lógica L seu valor é falsidade (F):
+
 a) B == A * C e (L ou V)
+//A iqual B vezes C e falso ou true
 b) B > A ou B == pot(A, A)
-c) L  e B div A >= C ou não A <= C
+//B maior que A ou A na potencia A
+c) L e B div A >= C ou não A <= C
+//falso e B dividido por A maior ou iqual a C ou negação de A menor ou iqual a C 
 d) não L ou V e rad(A + B) >= C
+//falso negação ou verdadeiro e radiciação de A+B maior ou iqual a C 
 e) B/A == C ou B/A != C
+//B dividido por A iqual a C ou B dividido por A negativa ou iqual a C
 f) L ou pot (B, A) <= C * 10 + A * B 
+// falso ou B na potencia A menor ou iqual a C vezes dez mais A vezes B 
+
 ---------------------------------------
 
 conversão de algoritimos para nodejs
@@ -20,12 +28,81 @@ rad(x)   => Math.sqrt(x)   //√x
 mod 2 => num%2
 div 9 => num/9
 
+//Operadores lógicos
+não => ! //negação 
+e => && //conjunção
+ou => || //disjunção
 */
 
-const a = parseInt(2);
-const b = parseInt(7);
-const c = parseFloat(3.5);
-const l = false
+const A = parseInt(2);
+const B = parseInt(7);
+const C = parseFloat(3.5);
+const L = false;
+const V = true;
 
 
-console.log(`ola`);
+function a() {
+ const retorno = "A) ";
+  if (A == B * C && L || V ) {
+    return retorno + true;
+  } else {
+    return retorno + false;
+  }
+}
+console.log(a());
+
+/* -------------- */
+
+function b() {
+  const retorno = "B) ";
+  if (B > A || Math.pow(2, 2)) {
+    return retorno + true;
+  } else {
+    return retorno + false;
+  }
+}
+console.log(b());
+/* -------------- */
+
+function c() {
+  const retorno = "C) ";
+  if (L && B / A >= C || !(A <= C)) {
+    return retorno + true;
+  } else {
+    return retorno + false;
+  }
+}
+console.log(c());
+/* -------------- */
+
+function d() {
+  const retorno = "D) ";
+  if ( !(L || V && Math.sqrt(A+B) >= C) ) {
+    return retorno + true;
+  } else {
+    return retorno + false;
+  }
+}
+console.log(d());
+/* -------------- */
+
+function e() {
+  const retorno = "E) ";
+  if ( B/A == C || B/A != C ) {
+    return retorno + true;
+  } else {
+    return retorno + false;
+  }
+}
+console.log(e());
+/* -------------- */
+
+function f() {
+  const retorno = "F) ";
+  if ( L || Math.pow(B, A) <= C * 10 + A * B ) {
+    return retorno + true;
+  } else {
+    return retorno + false;
+  }
+}
+console.log(f());
