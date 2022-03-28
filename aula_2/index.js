@@ -34,6 +34,8 @@ e => && //conjunção
 ou => || //disjunção
 */
 
+const chalk = require('chalk')
+
 const A = parseInt(2);
 const B = parseInt(7);
 const C = parseFloat(3.5);
@@ -42,7 +44,7 @@ const V = true;
 
 
 function a() {
- const retorno = "A) ";
+ const retorno = `${chalk.red("A) ")}`;
   if (A == B * C && L || V ) {
     return retorno + true;
   } else {
@@ -54,7 +56,7 @@ console.log(a());
 /* -------------- */
 
 function b() {
-  const retorno = "B) ";
+  const retorno = `${chalk.red("B) ")}`;
   if (B > A || Math.pow(2, 2)) {
     return retorno + true;
   } else {
@@ -65,7 +67,7 @@ console.log(b());
 /* -------------- */
 
 function c() {
-  const retorno = "C) ";
+  const retorno = `${chalk.red("C) ")}`;
   if (L && B / A >= C || !(A <= C)) {
     return retorno + true;
   } else {
@@ -76,7 +78,7 @@ console.log(c());
 /* -------------- */
 
 function d() {
-  const retorno = "D) ";
+  const retorno = `${chalk.red("D) ")}`;
   if ( !(L || V && Math.sqrt(A+B) >= C) ) {
     return retorno + true;
   } else {
@@ -87,7 +89,7 @@ console.log(d());
 /* -------------- */
 
 function e() {
-  const retorno = "E) ";
+  const retorno = `${chalk.red("E) ")}`;
   if ( B/A == C || B/A != C ) {
     return retorno + true;
   } else {
@@ -98,7 +100,7 @@ console.log(e());
 /* -------------- */
 
 function f() {
-  const retorno = "F) ";
+  const retorno = `${chalk.red("F) ")}`;
   if ( L || Math.pow(B, A) <= C * 10 + A * B ) {
     return retorno + true;
   } else {
