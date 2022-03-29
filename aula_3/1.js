@@ -53,13 +53,23 @@ inquirer
   .then((answers) => {
 
     function algoritimos() {
-      const A = parseInt(answers.quest_A);
-      const B = parseInt(answers.quest_B);
-      const C = parseInt(answers.quest_C);
 
-      console.log("-----------------");
-      console.log(`${A}x² + ${B}x + ${C}`);
-      console.log(`${A+B}x² + ${C}`);
+      const a = answers.quest_A;
+      const b = answers.quest_A;
+      const c = answers.quest_A;
+
+      const A = parseInt(a);
+      const B = parseInt(b);
+      const C = parseInt(c);
+
+      if (a || b || c != "" || null || undefined || NaN) {
+        console.log("-----------------");
+        console.log(`${A}x² + ${B}x + ${C}`);
+        console.log(`${A + B}x² + ${C}`);
+      } else {
+        console.log("Caracteres incorretos");
+      }
+      
     }
 
     algoritimos();
