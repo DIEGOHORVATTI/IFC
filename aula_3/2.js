@@ -71,7 +71,7 @@ inquirer
       const YbaQuadrado = Yba * Yba;
       console.log(`√( (${XbaQuadrado}) + (${YbaQuadrado})  )`);
       const XYbaSomado = XbaQuadrado + YbaQuadrado;
-      console.log(`√(${XYbaSomado})`);
+      console.log(`   √  (${XYbaSomado})`);
       const XYRaiz = Math.sqrt(XYbaSomado);
       console.log(XYRaiz);
     }

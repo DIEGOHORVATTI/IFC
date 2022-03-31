@@ -54,18 +54,18 @@ inquirer
 
     function algoritimos() {
 
-      const a = answers.quest_A;
-      const b = answers.quest_A;
-      const c = answers.quest_A;
+      const aQuest = answers.quest_A;
+      const bQuest = answers.quest_B;
+      const cQuest = answers.quest_C;
 
-      const A = parseInt(a);
-      const B = parseInt(b);
-      const C = parseInt(c);
+      const A = parseInt(aQuest);
+      const B = parseInt(bQuest);
+      const C = parseInt(cQuest);
 
-      if (a || b || c != "" || null || undefined || NaN) {
+      if (aQuest || bQuest || cQuest != "" || null || undefined || NaN) {
         console.log("-----------------");
         console.log(`${A}x² + ${B}x + ${C}`);
-        console.log(`${A + B}x² + ${C}`);
+        console.log(`${A*2 + B}x² + ${C}`);
       } else {
         console.log("Caracteres incorretos");
       }
