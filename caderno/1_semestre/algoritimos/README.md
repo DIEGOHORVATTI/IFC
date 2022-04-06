@@ -22,19 +22,25 @@ semestre : 1º
   <summary><a href="../algoritimos"><b>Algoritimos</b></a></summary>
     <ul>
       <li>
-        <a href="./aula_2">
-          <h4>aula 2</h4>
-        </a>
+        <h4>
+          <a href="./aula_2">
+            aula 2
+          </a>
+        </h4>
       </li>
       <li>
-        <a href="./aula_3">
-          <h4>aula 3</h4>
-        </a>
+        <h4>
+          <a href="./aula_3">
+            aula 3
+          </a>
+        </h4>
       </li>
       <li>
-        <a href="./aula_4">
-          <h4>aula 4</h4>
-        </a>
+        <h4>
+          <a href="./aula_4">
+            aula 4
+          </a>
+        </h4>
       </li>
     </ul>
 </details>

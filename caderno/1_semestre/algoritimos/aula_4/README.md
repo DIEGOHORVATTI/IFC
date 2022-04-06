@@ -40,7 +40,7 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
     <summary><b>python3 ./6.py</b></summary>
       <ul>
         <h4>
-          <a href="./6.py" target="_blank">
+          <a href="./6.py" target="blank">
             código→
           </a>
         </h4>
@@ -53,7 +53,7 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
     <summary><b>python3 ./9.py</b></summary>
       <ul>
         <h4>
-          <a href="./9.py" target="_blank">
+          <a href="./9.py" target="blank">
             código→
           </a>
         </h4>
@@ -66,7 +66,7 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
     <summary><b>python3 ./10.py</b></summary>
       <ul>
         <h4>
-          <a href="./10.py" target="_blank">
+          <a href="./10.py" target="blank">
             código→
           </a>
         </h4>
@@ -79,7 +79,7 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
     <summary><b>python3 ./14.py</b></summary>
       <ul>
         <h4>
-          <a href="./14.py" target="_blank">
+          <a href="./14.py" target="blank">
             código→
           </a>
         </h4>
@@ -92,7 +92,7 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
     <summary><b>python3 ./23.py</b></summary>
     <ul>
         <h4>
-          <a href="./23.py" target="_blank">
+          <a href="./23.py" target="blank">
             código→
           </a>
         </h4>
@@ -105,7 +105,7 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
     <summary><b>python3 ./24.py</b></summary>
       <ul>
         <h4>
-          <a href="./24.py" target="_blank">
+          <a href="./24.py" target="blank">
             código→
           </a>
         </h4>
@@ -118,7 +118,7 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
     <summary><b>python3 ./25.py</b></summary>
       <ul>
         <h4>
-          <a href="./25.py" target="_blank">
+          <a href="./25.py" target="blank">
             código→
           </a>
         </h4>
@@ -131,7 +131,7 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
     <summary><b>python3 ./27.py</b></summary>
       <ul>
         <h4>
-          <a href="./27.py" target="_blank">
+          <a href="./27.py" target="blank">
             código→
           </a>
         </h4>
