@@ -17,6 +17,8 @@ Ano      : 2022
 
 semestre : 1º
 
+Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/algoritimos
+
 <hr />
 <details open>
   <summary><a href="../algoritimos"><b>Algoritimos</b></a></summary>
