@@ -52,9 +52,11 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
   <details>
     <summary><b>python3 ./9.py</b></summary>
       <ul>
-        <a href="./9.py">
-          <h4>código→</h4>
-        </a>
+        <h4>
+          <a href="./9.py">
+            código→
+          </a>
+        </h4>
         <img src="img/9.png" />
       </ul>
   </details>
@@ -63,9 +65,11 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
   <details>
     <summary><b>python3 ./10.py</b></summary>
       <ul>
-        <a href="./10.py">
-          <h4>código→</h4>
-        </a>
+        <h4>
+          <a href="./10.py">
+            código→
+          </a>
+        </h4>
         <img src="img/10.png" />
       </ul>
   </details>
@@ -74,9 +78,11 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
   <details>
     <summary><b>python3 ./14.py</b></summary>
       <ul>
-        <a href="./14.py">
-          <h4>código→</h4>
-        </a>
+        <h4>
+          <a href="./14.py">
+            código→
+          </a>
+        </h4>
         <img src="img/14.png" />
       </ul>
   </details>
@@ -85,9 +91,11 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
   <details>
     <summary><b>python3 ./23.py</b></summary>
     <ul>
-        <a href="./23.py">
-          <h4>código→</h4>
-        </a>
+        <h4>
+          <a href="./23.py">
+            código→
+          </a>
+        </h4>
         <img src="img/23.png" />
     </ul>
   </details>
@@ -96,9 +104,11 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
   <details>
     <summary><b>python3 ./24.py</b></summary>
       <ul>
-        <a href="./24.py">
-          <h4>código→</h4>
-        </a>
+        <h4>
+          <a href="./24.py">
+            código→
+          </a>
+        </h4>
         <img src="img/24.png" />
       </ul>
   </details>
@@ -107,9 +117,11 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
   <details>
     <summary><b>python3 ./25.py</b></summary>
       <ul>
-        <a href="./25.py">
-          <h4>código→</h4>
-        </a>
+        <h4>
+          <a href="./25.py">
+            código→
+          </a>
+        </h4>
         <img src="img/25.png" />
       </ul>
   </details>
@@ -118,9 +130,11 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
   <details>
     <summary><b>python3 ./27.py</b></summary>
       <ul>
-        <a href="./27.py">
-          <h4>código→</h4>
-        </a>
+        <h4>
+          <a href="./27.py">
+            código→
+          </a>
+        </h4>
         <img src="img/27.png" />
       </ul>
   </details>
