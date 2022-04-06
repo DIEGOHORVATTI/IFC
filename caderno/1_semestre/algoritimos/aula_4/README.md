@@ -39,10 +39,8 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
   <details>
     <summary><b>python3 ./6.py</b></summary>
       <ul>
-
         <a href="./6.py">
-      
-          <h4>código→</h4>
+          código→
         </a>
         <img src="img/6.png" />
       </ul>
