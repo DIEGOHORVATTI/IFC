@@ -21,6 +21,8 @@ Tarefa   : Exercícios obrigatórios 9, 10, 14, 23, 24 e 27
 
 link     : https://docs.google.com/document/d/1xm2kjqZtKc_xkeqNWUjsLeQFCfkrNZUacrmz4exDFRs
 
+Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/algoritimos/aula_4
+
 <hr />
   <p>Observações: Nesta tarefa eu aprendi os conceitos básicos do python3 usando os algoritimos aprendido em sala de aula.<br /> Requesitos qualquer versão a partir de 2010 do python 2 ou 3, usarei o 3 atualizado pois gosto de testar novas funcionalidades.</p>
 
@@ -37,14 +39,10 @@ link     : https://docs.google.com/document/d/1xm2kjqZtKc_xkeqNWUjsLeQFCfkrNZUac
   <details>
     <summary><b>python3 ./6.py</b></summary>
       <ul>
-        <li>
-          <a href="./6.py">
-            <h4>código→</h4>
-          </a>
-        </li>
-        <li>
-          <img src="img/6.png" />
-        </li>
+        <a href="./6.py">
+          <h4>código→</h4>
+        </a>
+        <img src="img/6.png" />
       </ul>
   </details>
 
@@ -52,14 +50,10 @@ link     : https://docs.google.com/document/d/1xm2kjqZtKc_xkeqNWUjsLeQFCfkrNZUac
   <details>
     <summary><b>python3 ./9.py</b></summary>
       <ul>
-        <li>
-          <a href="./9.py">
-            <h4>código→</h4>
-          </a>
-        </li>
-        <li>
-          <img src="img/9.png" />
-        </li>
+        <a href="./9.py">
+          <h4>código→</h4>
+        </a>
+        <img src="img/9.png" />
       </ul>
   </details>
 
@@ -67,14 +61,10 @@ link     : https://docs.google.com/document/d/1xm2kjqZtKc_xkeqNWUjsLeQFCfkrNZUac
   <details>
     <summary><b>python3 ./10.py</b></summary>
       <ul>
-        <li>
-          <a href="./10.py">
-            <h4>código→</h4>
-          </a>
-        </li>
-        <li>
-          <img src="img/10.png" />
-        </li>
+        <a href="./10.py">
+          <h4>código→</h4>
+        </a>
+        <img src="img/10.png" />
       </ul>
   </details>
 
@@ -82,44 +72,32 @@ link     : https://docs.google.com/document/d/1xm2kjqZtKc_xkeqNWUjsLeQFCfkrNZUac
   <details>
     <summary><b>python3 ./14.py</b></summary>
       <ul>
-        <li>
-          <a href="./14.py">
-            <h4>código→</h4>
-          </a>
-        </li>
-        <li>
-          <img src="img/14.png" />
-        </li>
+        <a href="./14.py">
+          <h4>código→</h4>
+        </a>
+        <img src="img/14.png" />
       </ul>
   </details>
 
   <!-- 23 -->
   <details>
     <summary><b>python3 ./23.py</b></summary>
-      <ul>
-        <li>
-          <a href="./23.py">
-            <h4>código→</h4>
-          </a>
-        </li>
-        <li>
-          <img src="img/23.png" />
-        </li>
-      </ul>
+    <ul>
+        <a href="./23.py">
+          <h4>código→</h4>
+        </a>
+        <img src="img/23.png" />
+    </ul>
   </details>
 
   <!-- 24 -->
   <details>
     <summary><b>python3 ./24.py</b></summary>
       <ul>
-        <li>
-          <a href="./24.py">
-            <h4>código→</h4>
-          </a>
-        </li>
-        <li>
-          <img src="img/24.png" />
-        </li>
+        <a href='"./24.py">
+          <h4>código→</h4>
+        </a>
+        <img src'="img/24.png" />
       </ul>
   </details>
 
@@ -127,14 +105,10 @@ link     : https://docs.google.com/document/d/1xm2kjqZtKc_xkeqNWUjsLeQFCfkrNZUac
   <details>
     <summary><b>python3 ./25.py</b></summary>
       <ul>
-        <li>
-          <a href="./25.py">
-            <h4>código→</h4>
-          </a>
-        </li>
-        <li>
-          <img src="img/25.png" />
-        </li>
+        <a href='"./25.py">
+          <h4>código→</h4>
+        </a>
+        <img sr'c="img/25.png" />
       </ul>
   </details>
 
@@ -142,14 +116,10 @@ link     : https://docs.google.com/document/d/1xm2kjqZtKc_xkeqNWUjsLeQFCfkrNZUac
   <details>
     <summary><b>python3 ./27.py</b></summary>
       <ul>
-        <li>
-          <a href="./27.py">
-            <h4>código→</h4>
-          </a>
-        </li>
-        <li>
-          <img src="img/27.png" />
-        </li>
+        <a hre'f="./27.py">
+          <h4>código→</h4>
+        </a>
+        <img 'src="img/27.png" />
       </ul>
   </details>
 </section>

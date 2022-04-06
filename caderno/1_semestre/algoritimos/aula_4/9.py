@@ -6,7 +6,7 @@ em 23,75%. O salário atual deve ser fornecido pelo usuário.
 """
 
 salario_inicial = int(input("Digite seu salário: ", ))
-
+ 
 print("Salario inicial:", salario_inicial,"R$")
 
 reajuste_salarial = float(23.75)
