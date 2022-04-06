@@ -39,7 +39,9 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
   <details>
     <summary><b>python3 ./6.py</b></summary>
       <ul>
-        <a href="https://github.com/DIEGOHORVATTI/IFC/blob/main/caderno/1_semestre/algoritimos/aula_4/6.py">
+
+        <a href="./6.py">
+      
           <h4>código→</h4>
         </a>
         <img src="img/6.png" />
