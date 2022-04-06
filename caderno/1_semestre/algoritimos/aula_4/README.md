@@ -39,7 +39,7 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
   <details>
     <summary><b>python3 ./6.py</b></summary>
       <ul>
-        <a href="./6.py">
+        <a href="https://github.com/DIEGOHORVATTI/IFC/blob/main/caderno/1_semestre/algoritimos/aula_4/6.py">
           <h4>código→</h4>
         </a>
         <img src="img/6.png" />
@@ -94,10 +94,10 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
   <details>
     <summary><b>python3 ./24.py</b></summary>
       <ul>
-        <a href='"./24.py">
+        <a href="./24.py">
           <h4>código→</h4>
         </a>
-        <img src'="img/24.png" />
+        <img src="img/24.png" />
       </ul>
   </details>
 
@@ -105,10 +105,10 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
   <details>
     <summary><b>python3 ./25.py</b></summary>
       <ul>
-        <a href='"./25.py">
+        <a href="./25.py">
           <h4>código→</h4>
         </a>
-        <img sr'c="img/25.png" />
+        <img src="img/25.png" />
       </ul>
   </details>
 
@@ -116,10 +116,10 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
   <details>
     <summary><b>python3 ./27.py</b></summary>
       <ul>
-        <a hre'f="./27.py">
+        <a href="./27.py">
           <h4>código→</h4>
         </a>
-        <img 'src="img/27.png" />
+        <img src="img/27.png" />
       </ul>
   </details>
 </section>
