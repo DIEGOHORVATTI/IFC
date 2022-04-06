@@ -13,6 +13,8 @@ Ano      : 2022
 
 semestre : 1º
 
+Repositório: https://github.com/DIEGOHORVATTI/IFC
+
 <hr />
 <details open>
   <summary><a href="./caderno"><b>CADERNO</b></a></summary>
@@ -22,34 +24,46 @@ semestre : 1º
           <summary><a href="./caderno/1_semestre"><b>1º Semestre</b></a></summary>
             <ul>
               <li>
-                <a href="./caderno/1_semestre/algoritimos">
-                  <h4>ALGORITMOS (90h) (2022.1) CCB0701</h4>
-                </a>
+                <h4>
+                  <a href="./caderno/1_semestre/algoritimos">
+                    ALGORITMOS (90h) (2022.1) CCB0701
+                  </a>
+                </h4>
               </li>
               <li>
-                <a href="./caderno/1_semestre/fund_de_informatica">
-                  <h4>FUNDAMENTOS DE INFORMÁTICA (30h) (2022.1) CCA0703</h4>
-                </a>
+                <h4>
+                  <a href="./caderno/1_semestre/fund_de_informatica">
+                    FUNDAMENTOS DE INFORMÁTICA (30h) (2022.1) CCA0703
+                  </a>
+                </h4>
               </li>
               <li>
-              <a href="./caderno/1_semestre/fund_matematicos_da_computacao">
-                <h4>FUNDAMENTOS MATEMÁTICOS DA COMPUTAÇÃO (60h) (2022.1) CCB0702</h4>
-              </a>
+                <h4>
+                  <a href="./caderno/1_semestre/fund_matematicos_da_computacao">
+                    FUNDAMENTOS MATEMÁTICOS DA COMPUTAÇÃO (60h) (2022.1) CCB0702
+                  </a>
+                </h4>
               </li>
               <li>
-                <a href="./caderno/1_semestre/ingles_1">
-                  <h4>INGLÊS I (30h) (2022.1) CCB0703</h4>
-                </a>
+                <h4>
+                  <a href="./caderno/1_semestre/ingles_1">
+                    INGLÊS I (30h) (2022.1) CCB0703
+                  </a>
+                </h4>
               </li>
               <li>
-                <a href="./caderno/1_semestre/metodologia_cientifica">
-                  <h4>METODOLOGIA CIENTÍFICA (30h) (2022.1) CCB0704</h4>
-                </a>
+                <h4>
+                  <a href="./caderno/1_semestre/metodologia_cientifica">
+                    METODOLOGIA CIENTÍFICA (30h) (2022.1) CCB0704
+                  </a>
+                </h4>
               </li>
               <li>
-                <a href="./caderno/1_semestre/pre_calculo">
-                  <h4>PRÉ-CÁLCULO (60h) (2022.1)</h4>
-                </a>
+                <h4>
+                  <a href="./caderno/1_semestre/pre_calculo">
+                    PRÉ-CÁLCULO (60h) (2022.1)
+                  </a>
+                </h4>
               </li>
             </ul>
         </details>
