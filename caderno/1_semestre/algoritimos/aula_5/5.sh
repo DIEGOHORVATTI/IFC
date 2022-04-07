@@ -1,20 +1,21 @@
 #!/usr/bin/env bash
 #
 #####################################################
+#													#
 #  Escrever um algoritmo que lê um valor N inteiro  #
 #  e positivo e que calcula e escreve o valor de E: # 
 #  O fatorialorial é cálculado da seguinte forma:   #
 #  fatorialorial de 3: 3x2x1 = 6                    #
+#####################################################		
+#													#					
+# O contador i inicia com o número 1 e o loop será  #
+# executado mediante seu valor ser menor igual ao   #
+# valor da variável $num 							#
+#													#
 #####################################################
-#
-# O contador i inicia com o número 1 e o loop será
-# executado mediante seu valor ser menor igual ao 
-# valor da variável $num
-#
-###########################################
-################ //FORMULA\\ ##############
-#E = 1 + 1 / 1! + 1 / 2! + 1 / 3! + 1 / N!#
-###########################################
+##################### //FORMULA\\ ###################
+##### E = 1 + 1 / 1! + 1 / 2! + 1 / 3! + 1 / N! #####
+#####################################################
 
 num_fatoriado()
 {
