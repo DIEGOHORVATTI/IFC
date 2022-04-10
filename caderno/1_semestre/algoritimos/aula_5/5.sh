@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#
 #####################################################
 #													#
 #  Escrever um algoritmo que lê um valor N inteiro  #
@@ -17,6 +16,7 @@
 ##### E = 1 + 1 / 1! + 1 / 2! + 1 / 3! + 1 / N! #####
 #####################################################
 
+
 num_fatoriado()
 {
 
@@ -25,10 +25,9 @@ num_fatoriado()
 	#Aqui é utilizada a variável $fatorial que será multiplicado
 	#pela variável $i(contador) até o fim do loop
 
-	    fatorial=$(($fatorial*$i))
+	  fatorial=$(($fatorial*$i))
 
 	done
-
 
 	echo $fatorial
 

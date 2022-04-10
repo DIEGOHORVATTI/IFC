@@ -1,25 +1,23 @@
 #!/usr/bin/env bash
-#
 ########################################################################################
-########################################################################################
-##																					  ##
-## Em uma eleição presidencial existem quatro candidatos. 							  ##
-## Os votos são informados através de códigos.  									  ##
+##																					 																					##
+## Em uma eleição presidencial existem quatro candidatos. 							 						  ##
+## Os votos são informados através de códigos.  																			##
 ## Os dados utilizados para a contagem dos votos obedecem à seguinte codificação:     ##
-## 1,2,3,4 = voto para os respectivos candidatos;								      ##
-## 5 = voto nulo; 																      ##
-## 6 = voto em branco;																  ##
-## 																					  ##
+## 1,2,3,4 = voto para os respectivos candidatos;								      								##
+## 5 = voto nulo; 																      															##
+## 6 = voto em branco;																  															##
+## 																					  																				##
 ## Elabore um algoritmo que leia o código do candidato em um voto. Calcule e escreva: ##
-## total de votos para cada candidato;												  ##
-## total de votos nulos;															  ##
-## total de votos em branco;														  ##
-## 																					  ##
-## Como finalizador do conjunto de votos, tem-se o valor 0.							  ##
-##																					  ##
-########################################################################################
+## total de votos para cada candidato;												  											##
+## total de votos nulos;															  															##
+## total de votos em branco;														  														##
+## 																					  																				##
+## Como finalizador do conjunto de votos, tem-se o valor 0.							  						##
+##																					  																				##
 ########################################################################################
 
+#votos zerados
 voto_1=0
 voto_2=0
 voto_3=0
@@ -27,10 +25,9 @@ voto_4=0
 voto_5=0
 voto_6=0
 
+#loop de usuarios 
 for ((i=1; i <= 4 ; i++))
-
 	do
-
 	echo -e "\n#########################################################\n"
 	echo -e "\n Ola eleitor(a)! Seja bem vindo a urna de terminal!\n"
 	read -p " Digite seu nome: " nome 
@@ -47,6 +44,7 @@ for ((i=1; i <= 4 ; i++))
 	 
 	read -p " seu voto: " voto
 
+	#adicionar +1 ao voto ou retornar erro tratado
 	case $voto in
 		1) ((voto_1++));;
 		2) ((voto_2++));;
@@ -56,8 +54,9 @@ for ((i=1; i <= 4 ; i++))
 		6) ((voto_6++));;
 	*) echo " Ei $nome, está opção é invalida! tente numeros inteiros de 1 á 6 :)";;
 	esac
-
 done
+
+#return dados
 echo -e "\n=========================================\n"
 echo "Sergio Moro(Podemos) teve $voto_1 votos"
 echo "Lula(PT) teve $voto_2 votos"
