@@ -13,29 +13,32 @@
 # a média geral do Programa, isto é, a média entre as médias dos alunos.#
 #########################################################################
 
+#definir qunatidade de alunos
+alunos=6
+
 reprovados=0
 recuperacao=0
 aprovados=0
+soma=0
+
+echo -e "\n\033[33;1m +--------------------------------------------------------------------------------------------------+\033[m"
+echo -e "\033[33;1m | Ola professor(a)! Seja bem vindo ao boletin de terminal! digite os nomes dos alunos e suas notas |\033[m"
+echo -e "\033[33;1m +--------------------------------------------------------------------------------------------------+\033[m\n"
 
 #loop de usuarios | para quando der 6 alunos no loop
-for ((i=1; i <= 6 ; i++))
+for ((i=1; i <= $alunos ; i++))
 	do
 
-	nota_total_media=$(( (nota_media+nota_media)/(2) ))
-	echo -e "\n nota total média $nota_total_media \n"
-
 	echo -e "\n#########################################################\n"
-	echo -e "\n Ola aluno(a)! Seja bem vindo ao boletin de terminal!\n"
 
-	read -p " Digite seu nome: " nome 
+	read -p " Digite o nome do aluno N$i: " nome 
 
 	echo -e "\n"
-	read -p "$nome, digite sua 1º nota: " nota_1
-	read -p "$nome, digite sua 2º nota: " nota_2
+	read -p " Digite a 1º nota de $nome: " nota_1
+	read -p " Digite a 2º nota de $nome: " nota_2
 	 
-	nota_media=$(((nota_1+nota_2)/(2)))
-
-	echo -e "\n print de nota média $nota_media \n"
+	#nota média por numero_1+numero 2 dividido por 2
+	nota_media=$(( (nota_1+nota_2)/(2) ))
 
 	#################################################
 	# -eq      (equal),             igual.					#
@@ -60,23 +63,24 @@ for ((i=1; i <= 6 ; i++))
 		#reculperação
 		((recuperacao++))
 	else
-		echo "+--------------------------------------------------------------------------------------"  
-	  echo "| Ei $nome, você colocou algum némero errado! tente numeros inteiros de 0 á 10 :)"
-	  echo "+--------------------------------------------------------------------------------------" 
+		echo " +--------------------------------------------------------------------------------------"  
+	  echo " | Ei $nome, você colocou algum némero errado! tente numeros inteiros de 0 á 10 :)"
+	  echo " +--------------------------------------------------------------------------------------" 
 	  exit
 		#caso aja algum numero menor que 0 ou maior que 10 na nota média ele sai do programa
 	fi
-
-	echo -e "\n"
-	echo " $nome foi aprovado + $aprovados"
-	echo " $nome foi reprovado + $reprovados"
-	echo " $nome ficou de recuperacão + $recuperacao" 
-	echo -e "\n"
+		
+	#array que guarda as notas médias em array incrementando a posição a cada loop
+	array_media[$i]=$nota_media
+	
+	#somar todos os valores do array e dividir pelos alunos
+	nota_total_media=$(( (soma+=${array_media[$i]})/($alunos) ))
 
 done
 
 #return dados
-echo -e "\n=========================================\n"
-echo " O numero de alunos aprovados foi de: $aprovados "
-echo " O numero de alunos reprovados foi de: $reprovados "
-echo " a média geral foi de: $nota_media "
+echo -e "\n=============================================\n"
+echo " O numero de alunos 'aprovados' foi de: $aprovados"
+echo " O numero de alunos 'reprovados' foi de: $reprovados"
+echo " O numero de alunos de 'recuperacao' foi de: $recuperacao"
+echo -e " A 'média' geral foi de: $nota_total_media\n"
