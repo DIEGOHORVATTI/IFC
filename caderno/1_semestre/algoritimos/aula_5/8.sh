@@ -16,7 +16,7 @@
 # Como finalizador do conjunto de votos, tem-se o valor 0.							  					 #
 #																					  																				 #
 ######################################################################################
-
+ 
 #votos zerados
 voto_1=0
 voto_2=0

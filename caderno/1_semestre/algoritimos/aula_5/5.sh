@@ -16,7 +16,7 @@
 ##### E = 1 + 1 / 1! + 1 / 2! + 1 / 3! + 1 / N! #####
 #####################################################
 
-
+#função que fatora o numero pasado por parametro do primeior argumento
 num_fatoriado()
 {
 
