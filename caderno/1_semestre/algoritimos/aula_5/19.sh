@@ -13,16 +13,15 @@
 # a média geral do Programa, isto é, a média entre as médias dos alunos.#
 #########################################################################
 
-#definir qunatidade de alunos
+#definir quantidade de alunos
 alunos=6
 
 reprovados=0
 recuperacao=0
 aprovados=0
-soma=0
 
 echo -e "\n\033[33;1m +--------------------------------------------------------------------------------------------------+\033[m"
-echo -e "\033[33;1m | Ola professor(a)! Seja bem vindo ao boletin de terminal! digite os nomes dos alunos e suas notas |\033[m"
+echo -e "\033[33;1m | Ola professor(a)! Seja bem vindo ao boletin de terminal! Digite os nomes dos alunos e suas notas |\033[m"
 echo -e "\033[33;1m +--------------------------------------------------------------------------------------------------+\033[m\n"
 
 #loop de usuarios | para quando der 6 alunos no loop

@@ -64,9 +64,10 @@ Tabela binária para octal
 
 <pre>
   
-  a) 110001111
   
     Bináio para octal
+    110001111
+    
     R = 617
     
     Octonal para Decimal
@@ -83,7 +84,9 @@ Tabela binária para octal
        24
         |_16
           1
-    <------ direita para esquerda
+    <------ direita para 
+
+    Binário para Hexadecimal
     
 
 </pre>

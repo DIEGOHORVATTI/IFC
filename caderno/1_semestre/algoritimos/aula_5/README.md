@@ -23,6 +23,8 @@ link     : https://docs.google.com/document/d/15rkwH4RgzNRejaZghTRIYAIVhywR5F852
 
 Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/algoritimos/aula_5
 
+referencias bibiográficas: https://aurelio.net/shell/canivete/#operadores | https://bash.cyberciti.biz/guide/The_case_statement
+
 <hr />
   <p>Observações: Nesta tarefa eu aprendi os conceitos básicos do shellscript usando os algoritimos aprendido em sala de aula.<br /> Requesitos qualquer versão do bash em terminal eu usarei a versão mais recente [GNU bash, versão 5.1.16].</p>
 

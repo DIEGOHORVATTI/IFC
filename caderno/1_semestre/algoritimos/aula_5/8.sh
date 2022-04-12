@@ -18,12 +18,7 @@
 ######################################################################################
  
 #votos zerados
-voto_1=0
-voto_2=0
-voto_3=0
-voto_4=0
-voto_5=0
-voto_6=0
+voto_1=voto_2=voto_3=voto_4=voto_5=voto_6=0
 
 #loop de usuarios 
 for ((i=1; i <= 4 ; i++))
@@ -52,15 +47,15 @@ for ((i=1; i <= 4 ; i++))
 		4) ((voto_4++));;
 		5) ((voto_5++));;
 		6) ((voto_6++));;
-	*) echo " Ei $nome, está opção é invalida! tente numeros inteiros de 1 á 6 :)";;
+	*) echo " Ei $nome, está opção é invalida! tente numeros inteiros de 1 á 6 :)"; exit;;
 	esac
 done
 
 #return dados
 echo -e "\n=========================================\n"
-echo "Sergio Moro(Podemos) teve $voto_1 votos"
-echo "Lula(PT) teve $voto_2 votos"
-echo "Ciro Gomes(PDT) teve $voto_3 votos"
-echo "Jair Bolsonaro (PL) teve $voto_4 votos"
-echo "teve $voto_5 votos nulos"
-echo "teve $voto_6 votos brancos"
+echo "Sergio Moro(Podemos): $voto_1 votos"
+echo "Lula(PT): $voto_2 votos"
+echo "Ciro Gomes(PDT): $voto_3 votos"
+echo "Jair Bolsonaro (PL): $voto_4 votos"
+echo "Votos nulos: $voto_5 votos"
+echo "Votos brancos: $voto_6 votos"
