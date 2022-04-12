@@ -18,9 +18,13 @@
 int main()
 {
 
+    //atribuir valores inteiros
     int cand1, cand2, cand3, cand4, branco, nulo, voto, i;
+    
+    //zerar valores
     cand1 = cand2 = cand3 = cand4 = branco = nulo = 0;
 
+    //loop de usuários
     for (i = 1; i <= 4; i++)
     {
         printf("\n\n######################################\n");
@@ -44,7 +48,6 @@ int main()
                 printf("\n######################################\n");
                 printf("#  Apenas valores numéricos de 1 á 6 #\n"); 
                 printf("######################################\n\n");
-                
                 exit(0); break;
         }
     }
