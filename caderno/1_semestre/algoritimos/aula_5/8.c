@@ -33,6 +33,11 @@ int main()
         scanf("%i", &voto);
 
         switch(voto){
+            case 0:
+                printf("\n######################################\n");
+                printf("#  Apenas valores numéricos de 1 á 6 #\n"); 
+                printf("######################################\n\n");
+                exit(0); break;
             case 1:
                 cand1++; break;
             case 2:
@@ -46,10 +51,7 @@ int main()
             case 6:
                 branco++; break;
             default:
-                printf("\n######################################\n");
-                printf("#  Apenas valores numéricos de 1 á 6 #\n"); 
-                printf("######################################\n\n");
-                exit(0); break;
+                nulo++; break;
         }
     }
       
