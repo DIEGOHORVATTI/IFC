@@ -32,29 +32,29 @@ int main()
         printf("Ola eleitor, Digite seu voto: "); 
         scanf("%i", &voto);
 
-        switch(voto){
-            case 0:
-                printf("\n######################################\n");
-                printf("#  Apenas valores numéricos de 1 á 6 #\n"); 
-                printf("######################################\n\n");
-                exit(0); break;
-            case 1:
-                cand1++; break;
-            case 2:
-                cand2++; break;
-            case 3:
-                cand3++; break;
-            case 4:
-                cand4++; break;
-            case 5:
-                nulo++; break;
-            case 6:
-                branco++; break;
-            default:
-                nulo++; break;
+            switch(voto){
+                case 0:
+                    printf("\n######################################\n");
+                    printf("#  Apenas valores numéricos de 1 á 6 #\n"); 
+                    printf("######################################\n\n");
+                    exit(0); break;
+                case 1:
+                    cand1++; break;
+                case 2:
+                    cand2++; break;
+                case 3:
+                    cand3++; break;
+                case 4:
+                    cand4++; break;
+                case 5:
+                    nulo++; break;
+                case 6:
+                    branco++; break;
+                default:
+                    nulo++; break;
+            }
         }
-    }
-      
+
     //return dados
     printf("\n\n######################################\n");
     printf("O candidado 1 recebeu %d votos\n", cand1);
