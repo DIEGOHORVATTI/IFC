@@ -6,23 +6,26 @@ O programa deverá parar a execução quando o usuário informar o número zero 
 #include <stdlib.h>
 int main(){
 
-
 	int valor, valores_negativo, valores_positivo;
 	valor=valores_negativo=valores_positivo=0;
 
-	for(int i=1; i <= 3; i++){
+	//enquanto i for menor que 20 adicione +1 á i
+	for(int i=1; i <= 20; i++){
 		
 		printf("\n\nDigite valor%d: ", i);
 		scanf("%i", &valor);
 
+		//se valor for diferente de 0
 		if (valor != 0){
+			//se valor for maior que 1(verificação de numero positivo)
 			if(valor >= 1){ valores_positivo++; }
 			else{ valores_negativo++; }
-		}else{
+		}
+		//se valor for iqual a 0
+		else{
 			printf("Bay Bay!");
 			exit(0);
 		}
-
 	}
 
 	printf("\n\n=====================\n\n");
