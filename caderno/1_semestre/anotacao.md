@@ -11,6 +11,5 @@
     09/05 | apresentação -> Principais conceitos e áreas da computação["dupla"]
 
     13/05 | prova 2 -> ?
-
 }
 </pre>
