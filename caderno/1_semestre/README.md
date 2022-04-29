@@ -69,7 +69,30 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre
     </ul>
 </details>
 <hr />
-<b/../caderno
-<h4>
-  <a href="../../caderno">⬅️voltar</a>
-</h4>
+
+<div align="center">
+  <span>
+    <a href="../../caderno"><<&nbsp;voltar</a>
+  </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+    <a href="../1_semestre">1_semestre</a>
+  </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+    <a href="../../certificados">certificados</a>
+    </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+   <a href="../../info_languagens">info_languagens</a>
+  </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+   <a href="../../organização_pdf">organização_pdf</a>
+  </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+   <a href="../../OBI">OBI</a>
+  </span>
+</div>
+<hr />
