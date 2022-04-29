@@ -6,3 +6,8 @@
     <li>09/05 | apresentação -> Principais conceitos e áreas da computação["dupla"]</li>
     <li>13/05 | prova 2 -> ?
 </ul>
+
+<ul>
+  <h1>Algaritomos</h1>
+    <li>02/05 | Prova 1 -> seleção simples, seleção composta e seleção encadeada, repetição["portugol, escrito a mão ಠ‿ಠ"]</li>
+</ul>
