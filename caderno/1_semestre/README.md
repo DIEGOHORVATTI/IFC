@@ -69,3 +69,7 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre
     </ul>
 </details>
 <hr />
+<br />
+<h4>
+  <a href="../../">⬅️voltar</a>
+</h4>
