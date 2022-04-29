@@ -21,7 +21,7 @@ int main(){
 		printf("E = %d   / %d\n", ((1+1)/(1+1)), ((2+1)/(N)) );
 		printf("E = %d\n", (((1+1)/(1+1))/((2+1)/(N))) );
 	}else{
-		printf("Apenas números inteiros e positivos")
+		printf("Apenas números inteiros e positivos");
 	}
 	
 	return(0);

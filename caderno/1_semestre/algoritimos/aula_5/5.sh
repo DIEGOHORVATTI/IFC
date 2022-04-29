@@ -37,7 +37,7 @@ read -p "Digite o valor de N!: " valor_n
 
 echo  "E = 1 + 1 / 1! + 1 / 2! + 1 / 3! + 1 /" $valor_n"!"
 
-fat_1=$(num_fatoriado 1)
+fat_1=$(num_fatoriado 1) 
 fat_2=$(num_fatoriado 2)
 fat_3=$(num_fatoriado 3)
 fat_n=$(num_fatoriado $valor_n)
