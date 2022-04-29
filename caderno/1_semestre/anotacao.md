@@ -1,5 +1,5 @@
 <ul>
-  <h1>Fundamentos da informatica</h1>
+  <h2>Fundamentos da informatica</h2>
     <li>02/05 | Prova 1 -> lista de exrecicios ponto flutuante</li>
     <li>04/05 | Tarefa -> entregar apresentação em slids siga("Principais conceitos e áreas da computação")["dupla"]</li>
     <li>06/05 | Trabalho -> tira  dúvidas</li>
@@ -8,6 +8,6 @@
 </ul>
 
 <ul>
-  <h1>Algaritomos</h1>
+  <h2>Algaritomos</h2>
     <li>02/05 | Prova 1 -> seleção simples, seleção composta e seleção encadeada, repetição["portugol, escrito a mão ಠ‿ಠ"]</li>
 </ul>
