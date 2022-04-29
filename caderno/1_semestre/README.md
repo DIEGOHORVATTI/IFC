@@ -19,6 +19,7 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre
 
 <hr />
 <details open>
+<a href="./anotacao.md">Anotação 1semestre</a>
   <summary><a href="./caderno/1_semestre"><b>1º Semestre</b></a></summary>
     <ul>
       <li>
