@@ -34,6 +34,5 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/organização_pdf
   <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
    <a href="https://github.com/DIEGOHORVATTI">sobre</a>
   </span>
-  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
 </div>
 <hr />
