@@ -74,7 +74,7 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC
 <hr />
 <div align="center">
   <span>
-    <a href="https://github.com/DIEGOHORVATTI:"><<&nbsp;sobre</a>
+    <a href="https://github.com/DIEGOHORVATTI"><<&nbsp;sobre</a>
   </span>
   <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
   <span>
