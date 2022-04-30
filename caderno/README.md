@@ -76,10 +76,6 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno
   </span>
   <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
   <span>
-    <a href="../1_semestre">1_semestre</a>
-  </span>
-  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
-  <span>
     <a href="../../certificados">certificados</a>
     </span>
   <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
