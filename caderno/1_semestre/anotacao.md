@@ -11,7 +11,31 @@
   <h2>Algaritomos</h2>
     <li>02/05 | Prova 1 -> seleção simples, seleção composta e seleção encadeada, repetição["portugol, escrito a mão ಠ‿ಠ"]</li>
 </ul>
-<br />
-<h4>
-  <a href="../../caderno">⬅️voltar</a>
-</h4>
+
+<hr />
+<div align="center">
+  <span>
+    <a href="../../caderno"><<&nbsp;voltar</a>
+  </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+    <a href="../1_semestre">1_semestre</a>
+  </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+    <a href="../../certificados">certificados</a>
+    </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+   <a href="../../info_languagens">info_languagens</a>
+  </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+   <a href="../../organização_pdf">organização_pdf</a>
+  </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+   <a href="../../OBI">OBI</a>
+  </span>
+</div>
+<hr />

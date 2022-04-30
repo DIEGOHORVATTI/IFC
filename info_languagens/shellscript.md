@@ -85,3 +85,27 @@ Operador 	Nome   Função
 |= 	OU de bit
 ^= 	OU exclusivo de bit
 </pre>
+
+<hr />
+<div align="center">
+  <span>
+    <a href="../../IFC"><<&nbsp;voltar</a>
+  </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+    <a href="../certificados">certificados</a>
+    </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+   <a href="../info_languagens">info_languagens</a>
+  </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+   <a href="../organização_pdf">organização_pdf</a>
+  </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+   <a href="../OBI">OBI</a>
+  </span>
+</div>
+<hr />

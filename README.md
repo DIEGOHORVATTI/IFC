@@ -70,4 +70,27 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC
       </li>
     </ul>
 </details>
+
+<hr />
+<div align="center">
+  <span>
+    <a href="https://github.com/DIEGOHORVATTI:"><<&nbsp;sobre</a>
+  </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+    <a href="./certificados">certificados</a>
+    </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+   <a href="./info_languagens">info_languagens</a>
+  </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+   <a href="./organização_pdf">organização_pdf</a>
+  </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
+   <a href="./OBI">OBI</a>
+  </span>
+</div>
 <hr />
