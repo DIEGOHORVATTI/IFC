@@ -17,7 +17,7 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/info_languagens
 <hr />
 <div align="center">
   <span>
-    <a href="../../IFC"><<&nbsp;voltar</a>
+    <a href="https://github.com/DIEGOHORVATTI/IFC"><<&nbsp;voltar</a>
   </span>
   <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
   <span>
