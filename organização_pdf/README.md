@@ -25,6 +25,10 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/organização_pdf
     </span>
   <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
   <span>
+    <a href="../certificados">certificados</a>
+    </span>
+  <span>&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+  <span>
    <a href="../OBI">OBI</a>
   </span>
    <a href="https://github.com/DIEGOHORVATTI">sobre</a>
