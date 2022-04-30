@@ -1,4 +1,4 @@
-# IFC - 1º Semestre 
+# IFC - Info languagens
 Instituto Federal Catarinense
 
 Repositório de resumo de linguagens de programação
