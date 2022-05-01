@@ -17,7 +17,7 @@
 #include <stdio.h>
 #include <stdlib.h> /* add funcion exit() */
 
-int main()
+int main()  
 {
 
     //atribuir valores inteiros
