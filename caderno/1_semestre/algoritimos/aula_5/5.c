@@ -20,34 +20,40 @@
 
 #include <stdio.h>
 
-int num_fatoriado(int x){
-	for(int fatorial=1 ,i=1; i <= x ; i++){
-	//Aqui é utilizada a variável fatorial que será multiplicado
-	//pela variável N(contador) até o fim do loop
+//calcula fatorial por parametro
+int num_fatoriado(int num_fat)  
+{
+	int i, fat ;
 
-	  int fatorial=(fatorial*x);
+	//verificação positivo e interiro
+	if(num_fat <= 1){ 
 
-		return(fatorial);
-	}  
+		return(1);
+
+	}else{
+
+		fat = 1;
+		//num fat = x*x*x*x
+		for(int i=1; i <= num_fat; i++){
+			fat *= i ;
+		}
+
+		return (fat) ;
+	}
 }
 
-int main(){
+int main(void){
+	
+	int valor_n; printf("Digite o valor de N: "); scanf("%d", &valor_n);
 
-int valor_n=0;
-printf("\nDigite o valor de N!: ");
-scanf("%i", &valor_n);
+	int fat_1 = num_fatoriado(1);
+	int fat_2 = num_fatoriado(2);
+	int fat_3 = num_fatoriado(3);
+	int fat_n = num_fatoriado(valor_n);
 
-printf("\nE = 1 + 1 / 1! + 1 / 2! + 1 / 3! + 1 / %d!\n", valor_n);
-
-int fat_1=num_fatoriado(1);
-int fat_2=num_fatoriado(2);
-int fat_3=num_fatoriado(3);
-int fat_n=num_fatoriado(valor_n);
-
-printf(fat_2);
-/*
-printf("E = $((1 + 1)) / $(($fat_1 + 1)) / $(($fat_2 + 1)) / $(($fat_3 + 1)) / $fat_n")
-printf("E = $(( (1+1 / $fat_1+1 / $fat_2+1 / $fat_1+1 / $fat_n) ))")
-*/
+	printf("\nE = 1 + 1 / 1! + 1 / 2! + 1 / 3! + 1 / %d!\n", valor_n);
+	printf("E = %d / %d / %d / %d / %d\n", (1+1), (fat_1+1), (fat_2+1), (fat_3+1), fat_n );
+	printf("E = %d\n", ((1+1)/(fat_1+1)/(fat_2+1)/(fat_1+1)/(fat_n)) );
+	
 	return(0);
 }
