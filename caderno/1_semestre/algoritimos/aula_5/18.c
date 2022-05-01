@@ -1,3 +1,4 @@
+//gcc ./18.c -o ./exe/18.exe && ./exe/18.exe
 #include <stdio.h>
 #include <math.h>
 

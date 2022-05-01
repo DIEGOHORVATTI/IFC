@@ -1,3 +1,4 @@
+//gcc ./7.c -o ./exe/7.exe && ./exe/7.exe
 #include <stdio.h>
 /*	
 	Escreva um algoritmo que leia um número

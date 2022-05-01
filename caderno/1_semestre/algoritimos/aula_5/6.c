@@ -1,3 +1,4 @@
+//gcc ./6.c -o ./exe/6.exe && ./exe/6.exe
 #include <stdio.h>
 
 /*

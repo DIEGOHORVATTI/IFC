@@ -1,7 +1,7 @@
+//gcc ./3.c -o ./exe/3 && ./exe/3
 /* Fazer um programa que retorne quantos valores digitados pelo usuário são negativos. 
 O programa deverá parar a execução quando o usuário informar o número zero ou for informado 20 valores. 
 */
-//gcc ./3.c -o ./exe/3 && ./exe/3
 
 #include <stdio.h>
 #include <stdlib.h>

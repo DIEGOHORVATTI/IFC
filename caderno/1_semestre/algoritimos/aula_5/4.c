@@ -1,3 +1,4 @@
+//compilador "gcc ./4.c -o ./exe/4.exe && ./exe/4.exe
 /*
 	Escrever um algoritmo que lê um valor N inteiro e positivo 
 	e que calcula e escreve o valor de E:   

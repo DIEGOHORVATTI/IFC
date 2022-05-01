@@ -1,3 +1,4 @@
+//gcc ./5.c -o ./exe/5.exe && ./exe/5.exe"
 //rever isso depois não me parece serto o resultado final
 /*
 #####################################################

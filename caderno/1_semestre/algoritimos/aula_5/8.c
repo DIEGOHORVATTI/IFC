@@ -1,4 +1,4 @@
-//compilador "gcc ./8.c -o ./exe/8.exe && ./exe/8.exe"
+//gcc ./8.c -o ./exe/8.exe && ./exe/8.exe
 /*
   Em uma eleição presidencial existem quatro candidatos. Os votos são informados através de códigos. 
   Os dados utilizados para a contagem dos votos obedecem à seguinte codificação:
