@@ -9,7 +9,9 @@
 
 int main(){
 
-  /* int joao = 150;
+
+
+  int joao = 150;
   int joao_cres = 2;
 
   int ze = 110;
@@ -25,30 +27,33 @@ int main(){
     int anos = i;
   }
 
-  printf("%d\n", anos); */
-
-  //matriz com 100 linhas e 50 colunas
-  //double notas[100];
-
-  //imprimir o elemento da linha 3 e coluna 10 da matriz notas
-  //printf("%lf", notas[3]);
-
-  /*
-     +__1___2____3
-    1|  1   11  111
-    2|  2   22  222
-    3|  3   33  333
-  */
-  int y,x;
-  int my_array[3][3] ={1, 2, 3, 11, 22, 33, 111, 222, 333};
-  for(y = 0; y < 3; y++){
-    for(x = 0; x < 3; x++){
-      printf("%d ", my_array[y][x]);
-    }
-    printf("\n");
-  } 
+  printf("%d\n", anos); 
 
 
 return(0);
 
 }
+
+
+/*
+
+  int joao[2][2] = { 150, 2 };
+
+  int ze[2][2] = { 110, 3 };
+
+  int resul_joao, resul_ze, anos;
+
+  for(int i; resul_joao <= resul_ze; i++){
+
+    int resul_joao = joao[0][0]+joao[0][1];
+    int resul_ze = ze[0][0]+ze[0][1];
+
+    int anos = i;
+  }
+
+  printf("%d\n", anos);
+
+return(0);
+
+}
+*/
