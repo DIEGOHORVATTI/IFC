@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 /*
   João tem 1,50 metro e cresce 2 centímetros por ano, 
@@ -29,13 +28,27 @@ int main(){
   printf("%d\n", anos); */
 
   //matriz com 100 linhas e 50 colunas
-  double notas[100];
+  //double notas[100];
 
   //imprimir o elemento da linha 3 e coluna 10 da matriz notas
-  printf("%lf", notas[3]);
-  
+  //printf("%lf", notas[3]);
+
+  /*
+     +__1___2____3
+    1|  1   11  111
+    2|  2   22  222
+    3|  3   33  333
+  */
+  int y,x;
+  int my_array[3][3] ={1, 2, 3, 11, 22, 33, 111, 222, 333};
+  for(y = 0; y < 3; y++){
+    for(x = 0; x < 3; x++){
+      printf("%d ", my_array[y][x]);
+    }
+    printf("\n");
+  } 
 
 
-  return(0);
+return(0);
 
 }
