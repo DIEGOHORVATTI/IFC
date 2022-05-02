@@ -4,7 +4,7 @@ O programa deverá parar a execução quando o usuário informar o número zero 
 */
 
 #include <stdio.h>
-#include <stdlib.h>
+
 int main(){
 
 	int valor, valores_negativo, valores_positivo;
@@ -13,7 +13,7 @@ int main(){
 	//enquanto i for menor que 20 adicione +1 á i
 	for(int i=1; i <= 20; i++){
 		
-		printf("\n\nDigite valor%d: ", i);
+		printf("\n\n Digite valor%d: ", i);
 		scanf("%i", &valor);
 
 		//se valor for diferente de 0
@@ -24,8 +24,8 @@ int main(){
 		}
 		//se valor for iqual a 0
 		else{
-			printf("Bay Bay!");
-			exit(0);
+			printf("%s\n", " Bay Bay!");
+			return(0);
 		}
 	}
 

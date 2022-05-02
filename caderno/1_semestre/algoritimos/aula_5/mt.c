@@ -10,7 +10,7 @@ int main(){
   
   int list_array[3][3] = {1, 2, 3, 11, 22, 33, 111, 222, 333};
 
-  printf("Digite 0 ou 1 para ver dois exemplos de uso de matrizes: ") ; scanf("%d", &input);
+  printf("\n Digite 0 ou 1 para ver dois exemplos de uso de matrizes: ") ; scanf("%d", &input);
 
   switch(input){
     case 0:
@@ -28,7 +28,7 @@ int main(){
       printf("%d\n\n", list_array[0][4]); 
       break;
     default:
-      printf(" Digite um valor de 0 á 1\n");
+      printf("\n Digite um valor de 0 á 1\n");
   }
 
   return(0);

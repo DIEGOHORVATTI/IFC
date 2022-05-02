@@ -23,21 +23,16 @@
 #include <stdio.h>
 
 //calcula fatorial por parametro
-int num_fatoriado(int num_fat)  
-{
-	int i, fat ;
+int num_fatoriado(int num_fat){
 
 	//verificação positivo e interiro
 	if(num_fat <= 1){ 
-
 		return(1);
-
 	}else{
-
-		fat = 1;
-		//num fat = x*x*x*x
-		for(int i=1; i <= num_fat; i++){
-			fat *= i ;
+		
+		int fat=1; 
+		for(int i=1; i <= num_fat; i++){ 
+			fat *= i ; 
 		}
 
 		return (fat) ;

@@ -15,7 +15,6 @@
 */
 
 #include <stdio.h>
-#include <stdlib.h> /* add funcion exit() */
 
 int main()  
 {
@@ -38,7 +37,8 @@ int main()
                     printf("\n######################################\n");
                     printf("#  Apenas valores numéricos de 1 á 6 #\n"); 
                     printf("######################################\n\n");
-                    exit(0); break;
+                    return(0); 
+                    break;
                 case 1:
                     cand1++; break;
                 case 2:
