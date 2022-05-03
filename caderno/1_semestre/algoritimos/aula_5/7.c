@@ -1,5 +1,6 @@
 //gcc ./7.c -o ./exe/7.exe && ./exe/7.exe
 #include <stdio.h>
+#include "./make.c"
 /*	
 	Escreva um algoritmo que leia um número
 	n (número de termos de uma progressão aritmética), 
@@ -41,5 +42,6 @@ int main(){
 	printf(" a%d = %d + %d\n", n, a1, ((n-1)*r));
 	printf(" a%d = %d\n", n, (a1+((n-1)*r)) );
 
+	make();
 	return(0);
 }

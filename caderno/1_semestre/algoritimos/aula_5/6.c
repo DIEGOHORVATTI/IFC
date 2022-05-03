@@ -1,5 +1,6 @@
 //gcc ./6.c -o ./exe/6.exe && ./exe/6.exe
 #include <stdio.h>
+#include "./make.c"
 
 /*
   João tem 1,50 metro e cresce 2 centímetros por ano, 
@@ -23,6 +24,7 @@ int main(){
   printf("%d\n", anos); 
 
 
-return(0);
+  make();
+  return(0);
 
 }

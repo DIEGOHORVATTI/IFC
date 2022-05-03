@@ -1,7 +1,7 @@
 //gcc ./1.c -o ./exe/1 && ./exe/1 | less
 
 #include <stdio.h>
-
+#include "./make.c"
 int main(){
 
 	printf(" Digite 'q' para sair ");
@@ -10,6 +10,7 @@ int main(){
 	//enqunto i for menor ou iqual a mil imprima↓
 	for( int i=0; i <= 1000; i++ ){ printf(" %d\n", i*10); }; 
 
+	make();
 	return(0);
 
 }

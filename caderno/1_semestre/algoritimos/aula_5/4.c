@@ -7,6 +7,7 @@
 //gcc ./4.c -o ./exe/4 && ./exe/4
 
 #include <stdio.h>
+#include "./make.c"
 
 int main(){
 
@@ -25,5 +26,6 @@ int main(){
 		printf("Apenas números inteiros e positivos");
 	}
 	
+	make();
 	return(0);
 }

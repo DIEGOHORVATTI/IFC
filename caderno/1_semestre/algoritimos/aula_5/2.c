@@ -1,5 +1,6 @@
 //gcc ./2.c -o ./exe/2 && ./exe/2
 #include <stdio.h>
+#include "./make.c"
 
 int main(){
 
@@ -20,5 +21,6 @@ int main(){
 		printf("%d\n", i*num);
 	}
 
+	make();
 	return(0);
 }

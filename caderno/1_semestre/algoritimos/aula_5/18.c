@@ -1,6 +1,7 @@
 //gcc ./18.c -o ./exe/18.exe && ./exe/18.exe
 #include <stdio.h>
 #include <math.h>
+#include "./make.c"
 
 /*
 #################################################################################
@@ -57,5 +58,6 @@ masculino=ferminino=sim=nao=idade = 0;
      //
   }*/
 
+  make();
   return(0);   
 }
