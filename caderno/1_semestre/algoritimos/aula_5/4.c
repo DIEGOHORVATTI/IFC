@@ -12,18 +12,18 @@
 int main(){
 
 	int N=0;
-	printf("Valor de N: ");
+	printf(" Valor de N: ");
 	scanf("%i", &N);
 
 	if (N >= 0)
 	{
-		printf("E = 1+1 / 1+1 / 2+1 / N\n");
-		printf("E = %d   / %d   / %d   / %d\n", 1+1, 1+1, 2+1, N );
-		printf("E = %d   / %d   / %d\n", 1+1, 1+1, ((2+1)/(N)) );
-		printf("E = %d   / %d\n", ((1+1)/(1+1)), ((2+1)/(N)) );
-		printf("E = %d\n", (((1+1)/(1+1))/((2+1)/(N))) );
+		printf(" E = 1+1 / 1+1 / 2+1 / N\n");
+		printf(" E = %d   / %d   / %d   / %d\n", 1+1, 1+1, 2+1, N );
+		printf(" E = %d   / %d   / %d\n", 1+1, 1+1, ((2+1)/(N)) );
+		printf(" E = %d   / %d\n", ((1+1)/(1+1)), ((2+1)/(N)) );
+		printf(" E = %d\n", (((1+1)/(1+1))/((2+1)/(N))) );
 	}else{
-		printf("Apenas números inteiros e positivos");
+		printf(" Apenas números inteiros e positivos");
 	}
 	
 	make();

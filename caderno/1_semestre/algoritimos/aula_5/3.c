@@ -30,9 +30,9 @@ int main(){
 		}
 	}
 
-	printf("\n\n=====================\n\n");
-	printf("Valores positivos: %d\n", valores_positivo);
-	printf("Valores negativos: %d\n", valores_negativo);
+	printf("\n\n =====================\n\n");
+	printf(" Valores positivos: %d\n", valores_positivo);
+	printf(" Valores negativos: %d\n", valores_negativo);
 
 	make();
 	return(0);

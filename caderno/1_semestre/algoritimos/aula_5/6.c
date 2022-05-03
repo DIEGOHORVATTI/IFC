@@ -21,7 +21,7 @@ int main(){
     anos=i;
   }
 
-  printf("%d\n", anos); 
+  printf(" %d anos\n", anos); 
 
 
   make();

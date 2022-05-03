@@ -13,7 +13,6 @@ read -p " Digite o numero/nome arquivo em .c: " numero_arquivo
 
 case $numero_arquivo in
 	0) echo -e "\n\033[32;1m bay bay!\033[m\n"; exit ;;
-	1) gcc ./$numero_arquivo.c -o ./exe/$numero_arquivo.exe && ./exe/$numero_arquivo.exe | less ;;
 	"h") exo-open --launch WebBrowser https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/algoritimos/aula_5/README.md;;
 	*) gcc ./$numero_arquivo.c -o ./exe/$numero_arquivo.exe && ./exe/$numero_arquivo.exe ;;
 esac

@@ -43,7 +43,7 @@ int main(void){
 			if(salario != 0){
 				lista_salario[i] = salario;
 			}else{
-				printf("bay bay!");
+				printf(" bay bay!");
 				return(0);
 			}
 		printf("%s", " Digite a quantidade de filhos: "); 

@@ -42,7 +42,7 @@ masculino=ferminino=sim=nao=idade = 0;
   for (int i = 0; i < 5; ++i)
   {
 
-    printf("\nDigite a idade: ");
+    printf("\n Digite a idade: ");
     scanf("%i", &idade); 
     printf("\n%i", idade, "\n");
 

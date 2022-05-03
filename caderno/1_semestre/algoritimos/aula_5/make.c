@@ -3,27 +3,31 @@
 int make(){
 		
 	int make=0;
-	printf(" ver lista(y/n)?: ");
+	printf("\n ver lista novamente(y/n)?: ");
 	scanf("%s", &make);
 
 	//y = 121
 	//Y = 89
 	//n = 110
-	//N = 
+	//N = 79
 
-	printf("%d\n", make);
+	//printf("%d\n", make);
 
-	/*switch(make){
-		case 121:
-		case 89:
+	if( make==121 || make==89 ){
+		make = 1;
+	}else{
+		make = 0;
+	}
+
+	switch(make){
+		case 1:
 			system("bash ./make.sh"); break;
 			return(0);
-		case 110:
-		case 
+		case 0:
 			return(0); break;
 		default: 
 			return(0);
-	}*/
+	}
 
 	return(0);
 }

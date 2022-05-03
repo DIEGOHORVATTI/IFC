@@ -4,21 +4,21 @@
 
 int main(){
 
-	printf("\n2) Fazer um programa que calcule a tabuada de qualquer número, e o limite de cálculo deve ser definido pelo usuário.\n\n");
+	printf("\n 2) Fazer um programa que calcule a tabuada de qualquer número, e o limite de cálculo deve ser definido pelo usuário.\n\n");
 
 	int num, max_num;
 	num=max_num=0;
 
-	printf("Imprimir tabuada de: ");
+	printf(" Imprimir tabuada de: ");
 	scanf("%i", &num);
 
-	printf("Até: ");
+	printf(" Até: ");
 	scanf("%i", &max_num);
 
 	//enquanto i for menor ou iqual a ('numero máximo(max_num)' dividido por 'numero tabuada(num)'
 	for(int i=0; i <= max_num/num; i++ ){
 		//imprima (i vezes 'numero tabuada')
-		printf("%d\n", i*num);
+		printf(" %d\n", i*num);
 	}
 
 	make();

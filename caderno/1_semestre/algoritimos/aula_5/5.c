@@ -42,16 +42,16 @@ int num_fatoriado(int num_fat){
 
 int main(void){
 	
-	int valor_n; printf("Digite o valor de N: "); scanf("%d", &valor_n);
+	int valor_n; printf(" Digite o valor de N: "); scanf("%d", &valor_n);
 
 	int fat_1 = num_fatoriado(1);
 	int fat_2 = num_fatoriado(2);
 	int fat_3 = num_fatoriado(3);
 	int fat_n = num_fatoriado(valor_n);
 
-	printf("\nE = 1 + 1 / 1! + 1 / 2! + 1 / 3! + 1 / %d!\n", valor_n);
-	printf("E = %d / %d / %d / %d / %d\n", (1+1), (fat_1+1), (fat_2+1), (fat_3+1), fat_n );
-	printf("E = %d\n", ((1+1)/(fat_1+1)/(fat_2+1)/(fat_1+1)/(fat_n)) );
+	printf("\n E = 1 + 1 / 1! + 1 / 2! + 1 / 3! + 1 / %d!\n", valor_n);
+	printf(" E = %d / %d / %d / %d / %d\n", (1+1), (fat_1+1), (fat_2+1), (fat_3+1), fat_n );
+	printf(" E = %d\n", ((1+1)/(fat_1+1)/(fat_2+1)/(fat_1+1)/(fat_n)) );
 	
 	make();
 	return(0);
