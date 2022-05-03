@@ -16,10 +16,10 @@ int main(){
 	printf("%s", " Digite um numero: ");
 	scanf("%d", &num);
 
-	if ( ((num/2)!=1) ){
-		printf("Numero par: %d\n", num);
+	if ( ((num%2)==0) ){
+		printf(" Numero par: %d\n", num);
 	} else{
-		printf("Numero impar: %d\n", num);
+		printf(" Numero impar: %d\n", num);
 	}
 
 	make();

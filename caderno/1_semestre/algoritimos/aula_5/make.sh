@@ -10,6 +10,7 @@ echo -e " ├──\033[31;1m   0\033[m  sair"
 echo -e " +──────────────\n"
 
 read -p " Digite o numero/nome arquivo em .c: " numero_arquivo 
+echo -e "\n"
 
 case $numero_arquivo in
 	0) echo -e "\n\033[32;1m bay bay!\033[m\n"; exit ;;

@@ -24,6 +24,7 @@ int make(){
 			system("bash ./make.sh"); break;
 			return(0);
 		case 0:
+			printf("\n%s\n\n", " bay bay!");
 			return(0); break;
 		default: 
 			return(0);
