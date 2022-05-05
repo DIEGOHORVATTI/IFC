@@ -84,21 +84,20 @@ for ((i=1; i <= $candidatos ; i++))
 			idade_media_ferminina=$(( ((soma+=${array_idade_ferminina[$i]})/($candidatos)) )) #somar todos os valores de idades contidos no array e dividir pelos candidatos
 							
 				#mulheres com idade inferior a 35↓
-				if [[ $idade -gt 45  ]]
+				if [[ $idade -le 45  ]]
 				then
 					#somar todos os valores de idades contidos no array e dividir pelos candidatos com idade maior que 45
 					array_idade_masculina_45[$i]=$idade 
 					#somar todos os valores de idades contidos no array e dividir pelos candidatos com idade maior que 45
-					idade_media_masculina_45=$(( ((soma+=${array_idade_masculina_45[$i]})/($candidatos)) )) 
+					$idade_media_masculina_45=$(( ((soma+=${array_idade_masculina_45[$i]})/($candidatos)) )) 
+				else
+					$homen_45=0
 				fi
 		;;
 		*) echo " Caracter invalido tente 'f''F' ou 'm''M' [minusculo/maiusculo] " ;;
 	esac
 
 done
-
-# formula de porcentagem ((porcentagem/100)*(totais)) 
-homen_45=$(( (($idade_media_masculina_45)/(100))*(($idade_media_masculina)) ))
 
 #return dados
 echo -e "\n=============================================\n"
@@ -107,3 +106,5 @@ echo "Numero de candidados Fermininos: $F"
 echo "Média de homens com mais de 45 anos: $homen_45%"
 echo "Média de candidadas masculinos com experiência: $idade_media_masculina_experiencia%"
 echo "Porcentagem de mulheres com menos de 35anos: x"
+
+exec bash ./make.sh

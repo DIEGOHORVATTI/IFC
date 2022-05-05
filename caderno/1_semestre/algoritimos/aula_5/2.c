@@ -16,7 +16,7 @@ int main(){
 	scanf("%i", &max_num);
 
 	//enquanto i for menor ou iqual a ('numero máximo(max_num)' dividido por 'numero tabuada(num)'
-	for(int i=0; i <= max_num/num; i++ ){
+	for(int i=0; i <= max_num; i++ ){
 		//imprima (i vezes 'numero tabuada')
 		printf(" %d\n", i*num);
 	}

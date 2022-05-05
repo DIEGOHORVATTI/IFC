@@ -17,13 +17,13 @@ Ano      : 2022
 
 semestre : 1º
 
-Tarefa   : Exercícios obrigatórios 5, 8, 15, 18 e 19;
+Tarefa   : Exercícios obrigatórios 5, 7, 15, 18 e 19;
 
 link     : https://docs.google.com/document/d/15rkwH4RgzNRejaZghTRIYAIVhywR5F852_JlHxwFeXE
 
 Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/algoritimos/aula_5
 
-referencias bibiográficas: https://aurelio.net/shell/canivete/#operadores | https://bash.cyberciti.biz/guide/The_case_statement
+referencias bibiográficas: https://pt.wikipedia.org/wiki/Make | https://docs.microsoft.com/pt-br/cpp/c-language/?view=msvc-170
 
 <hr />
   <p>Observações: Nesta tarefa eu aprendi os conceitos básicos do shellscript usando os algoritimos aprendido em sala de aula.<br /> Requesitos qualquer versão do bash em terminal eu usarei a versão mais recente [GNU bash, versão 5.1.16].</p>
@@ -33,113 +33,81 @@ referencias bibiográficas: https://aurelio.net/shell/canivete/#operadores | htt
   <pre>sudo pacman -S bash ou sudo apt install bash</pre>
   <!-- check -->
   <pre>bash --version</pre>
+
+  Nesta aula foi feito um "utilitário que compila automaticamente programas e bibliotecas do arquivo fonte através da leitura de instruções contidas em arquivos denominados Makefiles", 'make.sh' eu fiz um versão bem simplificada de um makefile com um help que leva para este readme na web
+  <a href="./make.sh" target="blank">
+    <img src="./img/make.png" />
+  </a>
   
 
 <hr />
 <section>
-  <!-- 6 -->
+ 
+  <!-- 5 -->
   <details>
-    <summary><b>bash ./6.py</b></summary>
-      <ul>
-        <h4>
-          <a href="./6.py" target="blank">
-            código→
-          </a>
-        </h4>
-        <img src="img/6.png" />
-      </ul>
-  </details>
-
-  <!-- 9 -->
-  <details>
-    <summary><b>bash ./9.py</b></summary>
-      <ul>
-        <h4>
-          <a href="./9.py" target="blank">
-            código→
-          </a>
-        </h4>
-        <img src="img/9.png" />
-      </ul>
-  </details>
-
-  <!-- 10 -->
-  <details>
-    <summary><b>bash ./10.py</b></summary>
-      <ul>
-        <h4>
-          <a href="./10.py" target="blank">
-            código→
-          </a>
-        </h4>
-        <img src="img/10.png" />
-      </ul>
-  </details>
-
-  <!-- 14 -->
-  <details>
-    <summary><b>bash ./14.py</b></summary>
-      <ul>
-        <h4>
-          <a href="./14.py" target="blank">
-            código→
-          </a>
-        </h4>
-        <img src="img/14.png" />
-      </ul>
-  </details>
-
-  <!-- 23 -->
-  <details>
-    <summary><b>bash ./23.py</b></summary>
+    <summary><b>./make.sh 5</b></summary>
     <ul>
         <h4>
-          <a href="./23.py" target="blank">
+          <a href="./5.c" target="blank">
             código→
           </a>
         </h4>
-        <img src="img/23.png" />
+        <img src="img/5.png" />
     </ul>
   </details>
 
-  <!-- 24 -->
+  <!-- 7 -->
   <details>
-    <summary><b>bash ./24.py</b></summary>
-      <ul>
+    <summary><b>./make.sh 7</b></summary>
+    <ul>
         <h4>
-          <a href="./24.py" target="blank">
+          <a href="./7.c" target="blank">
             código→
           </a>
         </h4>
-        <img src="img/24.png" />
-      </ul>
+        <img src="img/7.png" />
+    </ul>
   </details>
 
-  <!-- 25 -->
+  <!-- 15 -->
   <details>
-    <summary><b>bash ./25.py</b></summary>
-      <ul>
+    <summary><b>./make.sh 15</b></summary>
+    <ul>
         <h4>
-          <a href="./25.py" target="blank">
+          <a href="./15.c" target="blank">
             código→
           </a>
         </h4>
-        <img src="img/25.png" />
-      </ul>
+        <img src="img/15.png" />
+    </ul>
   </details>
 
-  <!-- 27 -->
+  <!-- 18 -->
   <details>
-    <summary><b>bash ./27.py</b></summary>
-      <ul>
+    <summary><b>./make.sh 18</b></summary>
+    <ul>
         <h4>
-          <a href="./27.py" target="blank">
+          <a href="./18.c" target="blank">
             código→
           </a>
         </h4>
-        <img src="img/27.png" />
-      </ul>
+        <img src="img/18.png" />
+    </ul>
   </details>
+
+  <!-- 19 -->
+  <details>
+    <summary><b>./make.sh 19</b></summary>
+    <ul>
+        <h4>
+          <a href="./19.c" target="blank">
+            código→
+          </a>
+        </h4>
+        <img src="img/19.png" />
+    </ul>
+  </details>
+
 </section>
 <hr /><br />
 

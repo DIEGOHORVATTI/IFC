@@ -15,14 +15,13 @@ int main(){
   int ze = 110;
   int anos;
   
-  for( int i=1; ze<joao; i++){
+  for( int i=1; ze<=joao; i++){
     joao+=2;
     ze+=3;
     anos=i;
   }
 
   printf(" %d anos\n", anos); 
-
 
   make();
   return(0);
