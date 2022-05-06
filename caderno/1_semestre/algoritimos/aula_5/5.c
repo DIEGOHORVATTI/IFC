@@ -34,6 +34,7 @@ int num_fatoriado(int num_fat){
 		int fat=1; 
 		for(int i=1; i <= num_fat; i++){ 
 			fat *= i ; 
+			fat = fat = i ; 
 		}
 
 		return (fat) ;
