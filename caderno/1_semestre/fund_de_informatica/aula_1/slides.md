@@ -1,35 +1,29 @@
 ---
-# try also 'default' to start simple
 theme: geist
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
 background: https://source.unsplash.com/collection/94734566/1920x1080
-# apply any windi css classes to the current slide
 class: ''
-colorSchema: 'auto'
+colorSchema: auto
 download: /slides-export.pdf
-# https://sli.dev/custom/highlighters.html
 highlighter: prism
-# show line numbers in code blocks
 lineNumbers: false
-# some information about the slides, markdown enabled
 info: |
   ## Building a Portfolio Website with Next.js
 
   by Sage Abdullah
+title: Building a Portfolio Website with Next.js
 ---
 
-# Building a Portfolio Website with Next.js
-
-Sage Abdullah
+<h1>Copiladores</h1>
+<hr />
+<h4>Diego Horvatti</h4>
+<h4>Giovane</h4>
 
 <div class="flex m-6 gap-2 abs-br">
-  <a target="_blank" rel="noreferrer noopener nofollow" href="https://github.com/laymonage/slides-portfolio-nextjs" alt="GitHub"
+  <a title="Slider github Diego Horvatti"  target="_blank" rel="slider aula 1" href="https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/fund_de_informatica/aula_1" alt="GitHub"
     class="text-xl opacity-50 icon-btn !border-none">
     <carbon-logo-github />
   </a>
 </div>
-
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
