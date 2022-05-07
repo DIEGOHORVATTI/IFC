@@ -26,7 +26,7 @@
 */
 int main(){
 
-	int n, a1, an, r;
+	/*int n, a1, an, r;
 
 	printf("%s", " Digite o valor de n: "); scanf("%d", &n );
 	printf("%s", " Digite o valor de a1: "); scanf("%d", &a1);
@@ -40,8 +40,16 @@ int main(){
 	printf("\n a%d = %d + (%d - %d) . %d\n", n, a1, n, 1, r);
 	printf(" a%d = %d + (%d) . %d\n", n, a1, (n-1), r);
 	printf(" a%d = %d + %d\n", n, a1, ((n-1)*r));
-	printf(" a%d = %d\n", n, (a1+((n-1)*r)) );
+	printf(" a%d = %d\n", n, (a1+((n-1)*r)) );*/
+	//int x=99;
+	char ovalorde[] = "o valor de x"; //usar para string
+
+	int n='n';
+	int N='N';
+	printf(" n:%d | N:%d\n", n, N);
+	printf("%s %i ", ovalorde ,x);
 
 	make();
 	return(0);
-}
+
+} 

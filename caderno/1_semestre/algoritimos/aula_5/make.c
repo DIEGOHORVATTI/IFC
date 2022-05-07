@@ -20,7 +20,7 @@ int make(){
 	}
 
 	switch(make){
-		case 1:
+		case 1 ... 2: //exemplo de uso de ou
 			system("bash ./make.sh"); break;
 			return(0);
 		case 0:

@@ -44,6 +44,13 @@ Repositório: https://github.com/DIEGOHORVATTI/IFC/tree/main/caderno/1_semestre/
           </a>
         </h4>
       </li>
+      <li>
+        <h4>
+          <a href="./aula_5">
+            aula 5
+          </a>
+        </h4>
+      </li>
     </ul>
 </details>
 
