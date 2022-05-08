@@ -31,7 +31,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 
-# About Me
+# Sumario
 
 <br />
 
@@ -43,22 +43,6 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 <br />
 
-More at [laymonage.com/about](https://laymonage.com/about)
-
-<div class="flex m-6 gap-2 abs-br">
-  <a target="_blank" rel="noreferrer noopener nofollow" href="https://github.com/laymonage" alt="GitHub"
-    class="text-xl opacity-50 icon-btn !border-none">
-    <carbon-logo-github />
-  </a>
-  <a target="_blank" rel="noreferrer noopener nofollow" href="https://linkedin.com/in/laymonage" alt="LinkedIn"
-    class="text-xl opacity-50 icon-btn !border-none">
-    <carbon-logo-linkedin />
-  </a>
-  <a target="_blank" rel="noreferrer noopener nofollow" href="https://twitter.com/laymonage" alt="Twitter"
-    class="text-xl opacity-50 icon-btn !border-none">
-    <carbon-logo-twitter />
-  </a>
-</div>
 
 ---
 
