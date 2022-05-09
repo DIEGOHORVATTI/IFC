@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn ../../caderno/1_semestre/fund_de_informatica/aula_1
-      - run: yarn build --if-present ../../caderno/1_semestre/fund_de_informatica/aula_1 
+      - run: yarn
+      - run: yarn build --if-present
         env:
           CI: true
