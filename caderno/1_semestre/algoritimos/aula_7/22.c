@@ -4,10 +4,8 @@
 int main(void){
 
 	printf(" %s", "Ler 3 valores e escrever a soma dos 2 maiores.\n\n");
-	
-	int piloto = 3;
 
-	int valor, matriz[piloto], cache_medio, cache_maior;
+	int piloto=3, valor, matriz[piloto], cache_medio, cache_maior;
 	cache_medio=cache_maior=0; //Limpar lixo de memória
 
 
