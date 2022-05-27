@@ -57,7 +57,7 @@ int main(void){
 
   //soma diagonal segundaria
   int soma_diagonal_segundaria=0;
-  for (int i=MAX_LEITURA-1; i >= 0 ; i--){
+  for (int i=MAX_LEITURA-1; i >= 0 ; i--){       
     soma_diagonal_segundaria+=matriz[i][i];
     printf(" %d", matriz[i][(MAX_LEITURA-1)-i]);
   }
