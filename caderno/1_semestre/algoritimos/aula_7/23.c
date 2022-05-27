@@ -1,53 +1,43 @@
 #include <stdio.h>
-#include "./time_exec.c"
 
 int main(void){
 
-  /*printf(" %s", "Ler 3 valores e escrevê-los em ordem crescente.\n");
+  int cache_maior_q_anterior, piloto=3, vetor[piloto];
 
-  int piloto=3, matriz[piloto], valor=0;
-
-  for (int i = 1; i <= piloto; ++i){
-    printf(" Digite o valor[%d]: ", i);
-    scanf("%d", &valor);
-    matriz[i] = valor;
-  }
-
-  int cache_valor=0;
-  for(int i = 1; i <= piloto; ++i){
-    if (matriz[i] > cache_valor) {
-      cache_menor = matriz[i];
-    }
-
-    if(i == 1){
-      printf(" Menor valor: %d", cache_menor);
-    }
-  }*/
-
-  printf(" %s", "Ler 3 valores e escrevê-los em ordem crescente.\n\n");
-  int maior, menor, piloto=3, notas[piloto], cache_maior=0;
-  maior=menor=0;
-
-  for (int i=1; i <= piloto; i++){
+  int car; 
+  for (int i=0; i < piloto; ++i){           // incremento de contador
     printf(" Digite um valor[%d]: ", i);
-    scanf("%d", &notas[i]);
+    scanf("%d", &car);
+    vetor[i]=car;
+    printf("\n %d", vetor[0]); 
 
-    if(notas[i] > maior){
-      maior=notas[i];
-    }
-    if(notas[i] < maior){
-      menor=notas[i];
-    }
-    
-    /*if (i == 3){
-      printf("\n Maior valor é %d\n", maior);
-      printf("\n Menor valor é %d\n", menor);
+
+   /* for (int j=i + 1; j < piloto; ++j){     // incremento linha (para verificar o próximo valor do vetor) 
+      if ( vetor[i] > vetor[j] ){           // Se o próximo valor de vetor for maior que o anterior
+        cache_maior_q_anterior =  vetor[i]; // guardar valor atual de vetor_i
+        printf("\n cache_maior_q_anterior: %d", vetor[i]);
+        vetor[i] = vetor[j];                // vetori iqual a vetorj no caso vetor i agora vale i+1 incremento do próximo valor de vetor
+        printf("\n vetor[i]: %d", vetor[j]);
+        vetor[j] = cache_maior_q_anterior;  // guarda o valor do próximo valor de vetor em cache para sr retornado a vetor i
+        printf("\n vetor[j]: %d", cache_maior_q_anterior); 
+      }
+      
+      printf("\n");
+
+      for (int i=0; i < piloto; ++i){
+        printf("\n %d", vetor[j]);              // imprimir vetor em ordem
+      }
     }*/
   }
 
-  printf("\n Maior valor é %d\n", maior);
-  printf("\n Menor valor é %d\n", menor);
-  
-  tempo();
+  /*for (int i=0; i < piloto; ++i){
+    printf("\n %d", vetor[i]);              // imprimir vetor em ordem
+  }*/
+
+  /*printf("\n");
+  for (int i=0; i < piloto; ++i){
+    printf("\n %d", vetor[i]);              // imprimir vetor em ordem
+  }*/
+
   return(0);
 }

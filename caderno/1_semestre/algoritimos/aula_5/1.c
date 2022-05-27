@@ -8,7 +8,9 @@ int main(){
 	printf("\n 1) Fazer um programa que imprima os números múltiplos de 10 entre 0 e 1000.\n\n");
 	
 	//enquanto i for menor ou iqual a mil imprima↓
-	for( int i=0; i <= 1000; i++ ){ printf(" %d\n", i*10); }; 
+	for( int i=1; i <= 1000; i++ ){ 
+		printf(" %d\n", i*10); 
+	}; 
 
 	make();
 	return(0);

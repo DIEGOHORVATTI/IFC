@@ -1,48 +1,28 @@
 #include <stdio.h>
 
-
 int main(void){
 
-	printf(" %s", "Ler 3 valores e escrever a soma dos 2 maiores.\n\n");
+  int cache_maior_q_anterior, piloto=3, vetor[piloto];
 
-	int piloto=3, valor, matriz[piloto], cache_medio, cache_maior;
-	cache_medio=cache_maior=0; //Limpar lixo de memória
+  for (int i = 0; i < piloto; ++i){         //  Atualizar valores da vetor com dados do usuário
+    printf(" Digite um valor[%d]: ", i);
+    scanf("%d", &vetor[i]);
+  }
 
+  for (int i=0; i < piloto; ++i){           // incremento linha
+    for (int j=i + 1; j < piloto; ++j){     // incremento linha (para verificar o proximo valor do vetor) 
+      if ( vetor[i] > vetor[j] ){           // Se o próximo valor de vetor for maior que o anterior
+        cache_maior_q_anterior =  vetor[i]; // guardar valor atual de vetor_i
+        vetor[i] = vetor[j];                // vetori iqual a vetorj no caso vetor i agora vale i+1 incremento do próximo valor de vetor
+        vetor[j] = cache_maior_q_anterior;  // guarda o valor do próximo valor de vetor em cache para sr retornado a vetor i
+      }
+    }
+  }
 
-	for (int i = 0; i < piloto; ++i){ 
-		printf(" Digite o valor[%d]: ", i+1);
-		scanf("%d", &valor);
-		matriz[i]= valor ;
-	}
+  printf("\n");
+  for (int i=piloto; i <= 0; --i){
+    printf("\n %d", vetor[i]);              // imprimir vetor crecente
+  }
 
-	int cache_menor=valor;
-	for (int i = 0; i < piloto; ++i){
-		// Valor maior
-		if ( cache_maior < matriz[i] ){ 
-			cache_maior = matriz[i];
-		}
-		// Valor menor
-		if ( cache_menor > matriz[i] ){ 
-			cache_menor = matriz[i];
-		} 
-	}
-
-	// Valor médio
-	for (int i = 0; i < piloto; ++i){
-		if (matriz[i] < cache_maior && matriz[i] > cache_menor){
-			cache_medio = matriz[i];
-		}
-	}
-	
-	
-		/*
-			printf("\n menor valor: %d", cache_menor );
-			printf("\n maior valor: %d", cache_maior );
-			printf("\n medio valor: %d\n", cache_medio );
-		*/
-	
-
-	printf("\n A soma é: %d", cache_maior+cache_medio );
-	
-	return(0);
+  return(0);
 }
