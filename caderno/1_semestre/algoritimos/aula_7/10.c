@@ -9,60 +9,71 @@
   Escreva estas somas e a matriz.
 */
 #include <stdio.h> 
+#include <stdlib.h>
+
 #define MAX_LEITURA 5
 
 int main(void){
 
-  int matrix[MAX_LEITURA][MAX_LEITURA];
-  for (int j = 0; j < MAX_LEITURA; ++j){
-    for (int i = 0; i < MAX_LEITURA; ++i){
-      matrix[j][i];
-      printf(" %d", matrix[j][i]);
-    }    
-    printf("\n");
+  /*Matriz quadrada => A[n]x[m]
+     n => n = linhas
+     m => colunas
+  */
+  
+  //atrubuição de valores randomicos a valores da matriz
+  int matriz[MAX_LEITURA][MAX_LEITURA];
+  for ( int j=0; j < MAX_LEITURA; j++ ){
+    for ( int i=0; i< MAX_LEITURA; i++ ){
+      matriz[i][j] = rand() % 5;
+    }
   }
 
-  /* int mat_1[5][5] = { 3, 8, 1, 6, 2, 0, 8, 3, 9};
-  for (int j = 0; j < 3; ++j){
-    for (int i = 0; i < 3; ++i){
-      printf(" %d", mat_1[j][i]);
-    }    
-    printf("\n");
-  }
-
-  //soma linha 2
-  int soma_linha_2=0;
-  for (int i = 0; i < 3; ++i){
-    soma_linha_2+=mat_1[1][i];
+  //soma linha 4
+  int soma_linha_4=0;
+  for (int i = 0; i < MAX_LEITURA; i++){
+    soma_linha_4+=matriz[i][3];
+    printf(" %d", matriz[i][3]);
   }    
-  printf("\n soma linha 2: %d \n", soma_linha_2);
+  printf("\n soma linha 4: %d \n", soma_linha_4);
+  printf("-------------------\n\n");
 
   //soma coluna 2
   int soma_coluna_2=0;
-  for (int i = 0; i < 3; ++i){
-    soma_coluna_2+=mat_1[i][1];
+  for (int i = 0; i < MAX_LEITURA; i++){
+    soma_coluna_2+=matriz[1][i];
+    printf(" %d", matriz[1][i]);
   }    
   printf("\n soma coluna 2: %d \n", soma_coluna_2);
-  
-  //soma diagonal
-  int soma_diagonal=0;
-  for (int i = 0; i < 3; ++i){
-    soma_diagonal+=mat_1[i][i];
-    printf(" %d", mat_1[i][i]);
+  printf("-------------------\n\n");
+
+  //soma diagonal principal
+  int soma_diagonal_principal=0;
+  for (int i=0; i < MAX_LEITURA ; i++){
+    soma_diagonal_principal+=matriz[i][i];
+    printf(" %d", matriz[i][i]);
   }
-  printf("\n soma diagonal: %d \n\n", soma_diagonal); 
+  printf("\n soma diagonal: %d \n", soma_diagonal_principal); 
+  printf("-------------------\n\n");
 
   //soma diagonal segundaria
-  int soma_diagonal_inversa=0;
-  for (int i = 2; i >= 0; --i){
-    soma_diagonal_inversa+=mat_1[i][i];
-    printf(" %d", mat_1[i][i]);
+  int soma_diagonal_segundaria=0;
+  for (int i=MAX_LEITURA-1; i >= 0 ; i--){
+    soma_diagonal_segundaria+=matriz[i][i];
+    printf(" %d", matriz[i][(MAX_LEITURA-1)-i]);
   }
-  printf("\n soma diagonal inversa: %d \n\n", soma_diagonal_inversa); 
+  printf("\n soma diagonal segundaria: %d \n", soma_diagonal_segundaria); 
+  printf("-------------------\n\n");
 
-  //soma diagonal segundaria
-  printf("\n soma zuada: %d %d %d \n\n", mat_1[0][2], mat_1[1][1], mat_1[2][0] );  */
-
+  int soma_matriz=0;
+  for ( int j=0; j < MAX_LEITURA; j++ ){
+    printf(" %d-> ", j);
+    for ( int i=0; i<MAX_LEITURA; i++ ){
+      printf(" %d", matriz[i][j]);
+      soma_matriz+=matriz[i][j];
+    }
+    printf("\n");
+  }
+  printf(" soma matriz: %d \n", soma_matriz);
 
   return(0);
 }
