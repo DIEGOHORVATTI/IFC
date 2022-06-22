@@ -12,5 +12,5 @@ else
 	echo -e " ├──\033[33;1m   h\033[m  help"
 	echo -e " ├──\033[31;1m   0\033[m  sair"
 	echo -e " +──────────────\n"
-fi
-echo -e "\n"
+fi 
+echo -e "\n"    
