@@ -28,15 +28,15 @@ int main(void){
 	//atualizar X e Y
 	for( int i=0; i < TECLADO; i++){
 		if( ((N[i]%2)==0) ){     //Se for par
-			if( ((N[i]%3)==0 )){   //Se for divisivel por 3
-				printf("\n N[%d] = %d -> É par e divisivel por 3 ", i+1, N[i]);
+			if( ((N[i]%3)==0 )){   //Se for divisível por 3
+				printf("\n N[%d] = %d -> É par e divisível por 3 ", i+1, N[i]);
 				X[x]=N[i];     //Valor de X é atualizado pelo N
 				x+=1;          //cont_x + cont_x+1 | cont x é o incremento de todas as passagens pelo if de divisão por 3
 			}
 		}
 		else{                    //Se não for par
-			if( ((N[i]%5)==0 )){   //Se for divisivel por 5
-				printf("\n N[%d] = %d -> É divisivel por 5 ", i+1, N[i]);
+			if( ((N[i]%5)==0 )){   //Se for divisível por 5
+				printf("\n N[%d] = %d -> É divisível por 5 ", i+1, N[i]);
 				Y[y]=N[i];
 				y+=1;
 			}
