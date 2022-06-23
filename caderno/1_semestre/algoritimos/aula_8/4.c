@@ -57,7 +57,7 @@ int X_( int vetor){
 
 int Y_( int vetor){
 
-	int Y[y], y_contador=0;;
+	int Y[y], y_contador=0;
 	for(int i=0; i < TECLADO; i++ ){
 		if( ((N[i]%5)==0 )){     //Se for divisível por 5
 			if( (( N[i]%2)==1) ){  //Se for impar
