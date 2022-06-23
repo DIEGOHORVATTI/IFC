@@ -7,10 +7,10 @@
 */
 
 #include <stdio.h>
-#define MAX_POSITION 10
+#define MAX_POSITION 2
 
 int matriz_rest_quests[MAX_POSITION][MAX_POSITION], pontuacao[MAX_POSITION];
-char vetor_gabarito[MAX_POSITION]={ 'b', 'c', 'b', 'c', 'b', 'a', 'c', 'd', 'c', 'a'};
+char vetor_gabarito[MAX_POSITION]={ 'b', 'c'};
 
 int inserir_resposta(){
   for(int j=0; j < MAX_POSITION; j++){
@@ -21,7 +21,6 @@ int inserir_resposta(){
     printf("\n");
   }
 }
-
 
 int verifica_resposta(int i, int j){
   if(matriz_rest_quests[i][j] == vetor_gabarito[i]){ return(1); }
@@ -49,7 +48,7 @@ int calcula_pontuacao(){
       if( verifica_resposta(i ,j) == 1 ){
         soma+=1;
       } else{
-        soma+=0;
+        //soma+=0;
       }
     }
     pontuacao[j]=soma;
@@ -72,7 +71,6 @@ int main(void){
   debug_quests();
 
   debug_pontuacao();
-
 
   return(0);
 }
