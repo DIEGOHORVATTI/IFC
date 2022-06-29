@@ -122,7 +122,7 @@ int retornaAno(){
 
 // retorna [0, 1, 2, 3, 4] aleatóriamente
 int retornoModelo(){ 
-  return (rand() % 5); 
+  return (rand() % 10); 
 } 
 
 // retorna [0, 1] aleatóriamente
@@ -149,46 +149,30 @@ int retornaPlaca_4(){
 
 sVeiculo atribuirVeiculo(){
   sVeiculo veiculo;
-  
-  printf("\n--- Cadastro de Proprietário ---\n\n");
 
-  printf("\nNome proprietario: ");
   char* nome = retornaNome();
   strcpy(veiculo.proprietario.nome, nome);
 
-  printf("\nLetra da placa: ");
+  veiculo.placa.numero = retornaPlaca_4();
+  veiculo.combustivel = retornoCombustivel();
+  veiculo.modelo = retornoModelo();
+  veiculo.cor = retornoCor();
+  veiculo.ano = retornaAno();
+
   char* placaLetra = retornaPlaca_3();
   strcpy(veiculo.placa.letra, placaLetra);
 
-  printf("\nNumero da placa: ");
-  veiculo.placa.numero = retornaPlaca_4();
-
-  printf("Digite o combustivel (Alcool, Diesel ou Gasolina)[0, 1, 2]: ");
-  veiculo.combustivel = retornoCombustivel();
-
-  printf("Digite o modelo do carro:");
-  veiculo.modelo = retornoModelo();
-
-  printf("Digite a cor do carro:");
-  veiculo.cor = retornoCor();
-
-  printf("Digite o numero do chassi:");
-  char* chassi = retornaChassi();
-  strcpy(veiculo.chassi, chassi);
-
-  printf("Digite o ano do sVeiculo:");
-  veiculo.ano = retornaAno();
-  //getchar(); 
+  return veiculo;
 }
 
-/* void imprimirUser(sFichaUser user){
+void imprimirVeiculos(sVeiculo veiculo){
   printf("\n\n --- Imprimindo os dados da struct ---\n\n");
-  printf("Nome: %s", user.nome);
-  printf("Apelido: %s", user.nick.apelido);
-  printf("Sexo: %s", user.sexo);
-  printf("Data de Nacimento: %d/%d/%d", user.nacimento.dia, user.nacimento.mes, user.nacimento.ano);
-  printf("\ncpf: %d", user.cpf);
-} */
+  printf("Proprietario: %s", veiculo.proprietario.nome);
+  printf("\nModelo: %d", veiculo.modelo);
+  printf("\nCor: %d", veiculo.cor);
+  printf("\nCombustivel: %d", veiculo.combustivel);
+  printf("\nPlaca: %s-%d", veiculo.placa.letra, veiculo.placa.numero);
+}
 
 /*
 void proprietariosComsVeiculosDiselAno1980Mais(){
@@ -232,8 +216,22 @@ void placasLetraaNumero0247rProprietario(sVeiculo carros[]){
 int main(){
 
   srand(time(NULL)); // semente aleatória mudada pela hora do sistema
-
   
+  sVeiculo veiculo[5];
+
+  for (int i=0; i < 3; i++){
+    veiculo[i] = atribuirVeiculo();
+  }
+
+  for (int i=0; i < 3; i++){
+    imprimirVeiculos( veiculo[i] );
+  }
+  
+
+  /* sVeiculo veiculo[10];
+
+  atribuirVeiculo();
+  imprimirVeiculos( veiculo[0] ); */
 
 	return 0;
 }
