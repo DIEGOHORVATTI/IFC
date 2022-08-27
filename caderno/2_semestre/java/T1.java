@@ -7,7 +7,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class T_1 {
+public class T1 {
   public static void main(String[] args){
 
     String triangulos[] ={ 
