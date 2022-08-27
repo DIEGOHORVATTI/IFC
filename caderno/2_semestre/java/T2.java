@@ -5,7 +5,7 @@
  * paga imposto de 7% sobre este salário.
  */
 
-  import java.util.Scanner;
+import java.util.Scanner;
 
 public class T2 {
   public static void main(String[] args) {
