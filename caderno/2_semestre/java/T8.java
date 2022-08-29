@@ -7,11 +7,9 @@ import java.util.Scanner;
 public class T8 {
 
   public static int Fatorial(int fatoriando){
-    
     if (fatoriando == 0) {
       return 1;
     }
-
     return fatoriando* Fatorial(fatoriando-1);
   }
 
