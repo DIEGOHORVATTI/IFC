@@ -30,43 +30,42 @@ public class T5 {
     if      (desconto >= 0  && desconto <= 250){ desconto = 5;}
     else if (desconto > 250 && desconto <= 500){ desconto = 10;}
     else if (desconto > 500){ desconto = 15;}
-    System.out.println("Valor desconto...: " + desconto);
+    System.out.println("Valor desconto...: " + desconto + "%");
     return desconto;
   }
 
   static int PrecoTotal(int valor, int produtoQuantidadeB){ 
     int resposta = valor*produtoQuantidadeB;
-    System.out.println("Preço total......: " + resposta);
+    System.out.println("Preço total......: " + resposta + "R$");
     return(resposta);
   }
 
   static int PrecoFinal(int quantidadeTotal, int valorDesconto){ 
     int precoFinal = (quantidadeTotal - ((quantidadeTotal * valorDesconto) / 100));
-    System.out.println("Preço final nota.: " + precoFinal);
+    System.out.println("Preço final nota.: " + precoFinal + "R$");
     return(precoFinal);
   }
 
   static void calculoPrint(int valor, int produtoQuantidadeB){
     int quantidadeTotal = PrecoTotal(valor, produtoQuantidadeB);
     int valorDesconto = Tabela2(quantidadeTotal);
-    int valorPrecoFinal = PrecoFinal(quantidadeTotal, valorDesconto);
+    PrecoFinal(quantidadeTotal, valorDesconto);
   }
 
   public static void main(String[] args) {
-
-    int  produtoQuantidadeB, codigoB, valor, quantidadeTotal;
-    produtoQuantidadeB=codigoB=valor=quantidadeTotal=0;
+    int  produtoQuantidadeB, codigoB, valor;
+    produtoQuantidadeB=codigoB=valor=0;
 
     System.out.print("Tabela I\nCódigo     Preço\n01 a 10 -> R$ 10,00\n11 a 20 -> R$ 15,00\n21 a 30 -> R$ 20,00\n31 a 40 -> R$ 40,00\n\nTabela II\nPreço Total da Nota         % de Desconto\nAté R$ 250,00               05%\nEntre R$250,00 e R$500,00   10%\nAcima de R$ 500,00          15%\n\n");
 
     System.out.print("Código do produto......: ");
     Scanner codigo = new Scanner(System.in);
     codigoB = codigo.nextInt();
-
+    
     System.out.print("Quantidade de produtos.: ");
     Scanner produtoQuantidade = new Scanner(System.in);
     produtoQuantidadeB = produtoQuantidade.nextInt();
-
+    
     if (codigoB >= 0 && codigoB <= 10) {
       valor = Tabela1(1);
       calculoPrint(valor, produtoQuantidadeB);
@@ -78,11 +77,14 @@ public class T5 {
     } else if (codigoB >= 21 && codigoB <= 30) {
       valor = Tabela1(3);
       calculoPrint(valor, produtoQuantidadeB);
-
+      
     } else if (codigoB >= 31 && codigoB <= 40) {
       valor = Tabela1(4);
       calculoPrint(valor, produtoQuantidadeB);
-
+      
     }
+    
+    codigo.close();
+    produtoQuantidade.close();
   }
 }
