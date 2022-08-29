@@ -83,5 +83,3 @@ echo " O numero de alunos 'aprovados' foi de: $aprovados"
 echo " O numero de alunos 'reprovados' foi de: $reprovados"
 echo " O numero de alunos de 'recuperacao' foi de: $recuperacao"
 echo -e " A 'média' geral foi de: $nota_total_media\n"
-
-exec bash ./make.sh

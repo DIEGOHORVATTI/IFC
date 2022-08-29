@@ -3,7 +3,6 @@
 */
 
 #include <stdio.h>
-#include "./make.c"
 
 int main(){
 
@@ -15,6 +14,5 @@ int main(){
 
 	printf(" A soma dos primeiros 100 numeros primos é: %d\n", calculo);
 
-	make();
 	return(0);
 }

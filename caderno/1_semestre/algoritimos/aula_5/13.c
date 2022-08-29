@@ -7,7 +7,6 @@
 */
 
 #include <stdio.h>
-#include "./make.c"
 
 int main(){
 
@@ -38,6 +37,5 @@ int main(){
 	printf(" Números positivos: %d\n", num_positivos);
 	printf(" Números negativos: %d\n", num_negativos);
 
-	make();
 	return(0);
 }

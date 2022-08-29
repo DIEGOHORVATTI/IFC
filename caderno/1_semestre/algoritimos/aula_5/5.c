@@ -21,7 +21,6 @@
 */
 
 #include <stdio.h>
-#include "./make.c"
 
 //calcula fatorial por parametro
 int num_fatoriado(int num_fat){
@@ -54,6 +53,5 @@ int main(void){
 	printf(" E = %d / %d / %d / %d / %d\n", (1+1), (fat_1+1), (fat_2+1), (fat_3+1), fat_n );
 	printf(" E = %d\n", ((1+1)/(fat_1+1)/(fat_2+1)/(fat_1+1)/(fat_n)) );
 	
-	make();
 	return(0);
 }

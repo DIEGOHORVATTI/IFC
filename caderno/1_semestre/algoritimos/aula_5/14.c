@@ -12,7 +12,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "./make.c"
 
 int main(void){
 
@@ -69,6 +68,5 @@ int main(void){
 
 	}
 
-	make();
 	return(0);
 }

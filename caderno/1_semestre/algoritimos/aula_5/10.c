@@ -8,7 +8,6 @@
 */
 
 #include <stdio.h>
-#include "./make.c"
 
 int main(){
 
@@ -22,6 +21,5 @@ int main(){
 		printf(" Numero impar: %d\n", num);
 	}
 
-	make();
 	return(0);
 }

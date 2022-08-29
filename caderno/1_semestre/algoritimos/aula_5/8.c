@@ -15,7 +15,6 @@
 */
 
 #include <stdio.h>
-#include "./make.c"
 
 int main()  
 {
@@ -66,6 +65,5 @@ int main()
     printf(" O total de votos nulos foi %d votos\n", nulo);
     printf(" O total de votos brancos foi %d votos\n", branco);
 
-    make();
     return (0);
 }

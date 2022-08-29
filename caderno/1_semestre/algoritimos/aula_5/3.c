@@ -4,7 +4,6 @@ O programa deverá parar a execução quando o usuário informar o número zero 
 */
 
 #include <stdio.h>
-#include "./make.c"
 
 int main(){
 
@@ -34,6 +33,5 @@ int main(){
 	printf(" Valores positivos: %d\n", valores_positivo);
 	printf(" Valores negativos: %d\n", valores_negativo);
 
-	make();
 	return(0);
 }

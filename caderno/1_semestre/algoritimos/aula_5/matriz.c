@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "./make.c"
 
 /*
   exemplo pratico de matrizes em C
@@ -32,7 +31,6 @@ int main(){
       printf("\n Digite um valor de 0 á 1\n");
   }
 
-  make();
   return(0);
 
 }

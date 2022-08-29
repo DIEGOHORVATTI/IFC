@@ -39,10 +39,11 @@ não possuem nenhum dígito igual a zero.
 #include <string.h>
 
 #define NOME 20
-#define CHASSI 20
+#define CHASSI 25
 #define MAX_PLACA_LETRA 3 // 3 caracteres de letra da placa
 #define ALFABETO 26  // maximo de caracteres no alfabeto brasileiro
 #define MAX_NOME 100 // tamnaho máximo de caracteres para formar um nome
+#define LOOP 20
 
 // Placa XXX-YYYY
 // 3 -> letras
@@ -120,6 +121,7 @@ char* retornaPlaca_3(){
   return ( vet_placa );
 }
 
+// atribuir valores
 sVeiculo atribuirVeiculo(){
   sVeiculo veiculo;
 
@@ -145,8 +147,7 @@ sVeiculo atribuirVeiculo(){
 }
 
 void imprimirVeiculos(sVeiculo veiculo){
-  printf("\n\n --- Imprimindo os dados da struct ---\n\n");
-  printf("Proprietario: %s", veiculo.proprietario.nome);
+  printf("\n\nProprietário: %s", veiculo.proprietario.nome);
   printf("\nModelo: %d", veiculo.modelo);
   printf("\nCor: %d", veiculo.cor);
   printf("\nAno: %d", veiculo.ano);
@@ -155,60 +156,66 @@ void imprimirVeiculos(sVeiculo veiculo){
   printf("\nChassis: %s", veiculo.chassi);
 }
 
-/*
-void proprietariosComsVeiculosDiselAno1980Mais(){
+/* ------------------------- */
 
-	// b) Construa um algoritmo que liste todos os proprietários cujos carros são do ano de
-	// 1980 ou posterior e que sejam movidos a diesel.
 
-	printf("\nProprietarios com sVeiculos a diesel do ano de 1980 ou posterior:\n");
+// A)
+void a(sVeiculo veiculo){
 
-	int i;
-
-	for (i = 0; i < QNT; i++)
-	{
-
-		if (carros[i].ano >= 1980 && carros[i].combustivel == "Diesel")
-		{
-			printf("Nome: %s \n", carros[i].nome);
-		}
-	}
-	printf("\n");
+  imprimirVeiculos(veiculo);
 }
 
-void placasLetraaNumero0247rProprietario(sVeiculo carros[]){
+// B
+void b(sVeiculo veiculo){
 
-	printf("\nPlacas que comecam com A e terminam com 0, 2, 4 ou 7:");
+  if( veiculo.ano >= 1980 && veiculo.combustivel == 1){
+    printf("Nome: %s \n", veiculo.proprietario.nome);
+  }
+}
 
-	int i;
+// C
+void c(sVeiculo veiculo){
 
-	for (i = 0; i < QNT; i++)
-	{
-		if (carros[i].placa[0] == 'A' && carros[i].placa[6] == '2')
-		{
-			printf("\nPlaca: %s ", carros[i].placa);
-		}
-	}
-	printf("\n\n");
-} 
+  if( veiculo.placa.letra[1] == 'A' && veiculo.placa.numero == 0 || veiculo.placa.numero == 2 || veiculo.placa.numero == 4 || veiculo.placa.numero == 7){
+    printf("Nome: %s \n", veiculo.proprietario.nome);
+  }
 
+}
+
+// D
+void d(sVeiculo veiculo){
+
+printf("ok");
+
+/* 
+  if( veiculo.placa.letra == 'A' && veiculo[4].placa.numero == 0 || veiculo.placa.numero[4] == 2 || veiculo.placa.numero[4] == 4 || veiculo.placa.numero[4] == 7){
+    printf("\nPlaca: %s-%d", veiculo.placa.letra, veiculo.placa.numero);
+  } 
 */
+
+}
 
 int main(){
 
   srand(time(NULL)); // semente aleatória mudada pela hora do sistema
+
+  sVeiculo veiculo[ LOOP ];
+
+  for (int i=0; i < LOOP; i++){ veiculo[i] = atribuirVeiculo(); }
+
+  /* ----------------------------------- */
   
-  int loop = 5;
-
-  sVeiculo veiculo[ loop ];
-
-  for (int i=0; i < loop; i++){
-    veiculo[i] = atribuirVeiculo();
-  }
-
-  for (int i=0; i < loop; i++){
-    imprimirVeiculos( veiculo[i] );
-  }
+  //A
+  //for (int i=0; i < LOOP; i++){ a(veiculo[i]); }
+  
+  //B
+  //for (int i=0; i < LOOP; i++){ b(veiculo[i]); }
+  
+  //C
+  for (int i=0; i < LOOP; i++){ c(veiculo[i]); }
+  
+  //D
+  for (int i=0; i < LOOP; i++){ (veiculo[i]); }
 
 	return 0;
 }

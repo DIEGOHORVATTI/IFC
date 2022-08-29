@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "./make.c"
 
 /*
 	A prefeitura de uma cidade fez uma pesquisa entre seus habitantes, 
@@ -36,7 +35,7 @@ int main(void){
 			//verificar maior salário
 			if (salario >= salario_cache){
 				maior_salario = salario;
-			}make();
+			}
 
 
 			//verificação de salario
@@ -64,6 +63,5 @@ int main(void){
 	printf(" Percentual maior que 100R$: %d de %d\n", percentual, num_habitantes);
 	printf(" O maior salário é: %dR$\n", maior_salario);
 
-	make();
 	return(0);  
 } 

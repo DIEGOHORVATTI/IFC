@@ -106,5 +106,3 @@ echo "Numero de candidados Fermininos: $F"
 echo "Média de homens com mais de 45 anos: $homen_45%"
 echo "Média de candidadas masculinos com experiência: $idade_media_masculina_experiencia%"
 echo "Porcentagem de mulheres com menos de 35anos: x"
-
-exec bash ./make.sh

@@ -3,7 +3,6 @@
 */
 
 #include <stdio.h>
-#include "./make.c"
 
 int main(){
 
@@ -13,6 +12,5 @@ int main(){
 		printf(" %d\n", i*5);
 	}
 
-	make();
 	return(0);
 }

@@ -1,7 +1,6 @@
 //gcc ./1.c -o ./exe/1 && ./exe/1
 
 #include <stdio.h>
-#include "./make.c"
 int main(){
 
 	printf(" Digite 'q' para sair ");
@@ -12,7 +11,5 @@ int main(){
 		printf(" %d\n", i*10); 
 	}; 
 
-	make();
 	return(0);
-
 }
