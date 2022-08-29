@@ -16,8 +16,8 @@ import java.util.Scanner;
 public class T7 {
   public static void main(String[] args) { 
 
-    int TIMES = 2;
-    int JOGADORES = 1;
+    int TIMES = 5;
+    int JOGADORES = 11;
 
     System.out.print("Tabela I\nCódigo     Preço\n01 a 10 -> R$ 10,00\n11 a 20 -> R$ 15,00\n21 a 30 -> R$ 20,00\n31 a 40 -> R$ 40,00\n\nTabela II\nPreço Total da Nota         % de Desconto\nAté R$ 250,00               05%\nEntre R$250,00 e R$500,00   10%\nAcima de R$ 500,00          15%\n\n");
     
