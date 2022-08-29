@@ -14,25 +14,27 @@ public class T9 {
     return fatoriando * Fatorial(fatoriando - 1);
   }
   public static void main(String[] args) {
-    
-    System.out.print("Digite numero fatoriando[1].: ");
-    Scanner num1 = new Scanner(System.in);
-    int fatorial1 = num1.nextInt();
+    try (Scanner scanner = new Scanner(System.in)) {
+      // teclado 1
+      System.out.print("Digite numero fatoriando[1].: ");
+      int fatorial1 = scanner.nextInt();
+      
+      // teclado 2
+      System.out.print("Digite numero fatoriando[2].: ");
+      int fatorial2 = scanner.nextInt();
+      
+      // sinal positivo
+      int cont = (fatorial1 >= fatorial2) ? (fatorial1-fatorial2) : (fatorial2-fatorial1);
 
-    System.out.print("Digite numero fatoriando[2].: ");
-    Scanner num2 = new Scanner(System.in);
-    int fatorial2 = num1.nextInt();
-
-    int cont = (fatorial1 >= fatorial2) ? (fatorial1-fatorial2) : (fatorial2-fatorial1);
-
-    System.out.println();
-    if (fatorial1 <= fatorial2) {
-      for (int i=0; i <= cont; i++) {
-        System.out.println("[" + (fatorial1) + "] >> " + Fatorial(fatorial1++));
-      }
-    }else{
-      for (int i=0; i <= cont; i++) {
-        System.out.println("[" + (fatorial1) + "] >> " + Fatorial(fatorial1--));
+      System.out.println();
+      if (fatorial1 <= fatorial2) {
+        for (int i=0; i <= cont; i++) {
+          System.out.println("[" + (fatorial1) + "] >> " + Fatorial(fatorial1++));
+        }
+      }else{
+        for (int i=0; i <= cont; i++) {
+          System.out.println("[" + (fatorial1) + "] >> " + Fatorial(fatorial1--));
+        }
       }
     }
   }
