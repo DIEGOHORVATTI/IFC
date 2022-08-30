@@ -24,26 +24,24 @@ public class T7 {
     int idade[][]    = new int[TIMES][JOGADORES];
     float peso[][]   = new float[TIMES][JOGADORES];
     float altura[][] = new float[TIMES][JOGADORES];
+    
+    try (Scanner scanner = new Scanner(System.in)) {
+      for(int j=0; j < TIMES; j++){
+        for(int i=0; i < JOGADORES; i++){
+          System.out.print("Idade  -> time[" + j + "], jogador[" + i + "]...: ");
+          idade[j][i] = scanner.nextInt();
 
-    for(int j=0; j < TIMES; j++){
-      for(int i=0; i < JOGADORES; i++){
-        System.out.print("Idade  -> time[" + j + "], jogador[" + i + "]...: ");
-        Scanner scannerIdade = new Scanner(System.in);
-        idade[j][i] = scannerIdade.nextInt();
+          System.out.print("Peso   -> time[" + j + "], jogador[" + i + "]...: ");
+          peso[j][i] = scanner.nextInt();
 
-        System.out.print("Peso   -> time[" + j + "], jogador[" + i + "]...: ");
-        Scanner scannerPeso = new Scanner(System.in);
-        peso[j][i] = scannerPeso.nextInt();
-
-        System.out.print("Altura -> time[" + j + "], jogador[" + i + "]...: ");
-        Scanner scannerAltura = new Scanner(System.in);
-        altura[j][i] = scannerAltura.nextInt();
-        System.out.print("------------------------------------\n");
+          System.out.print("Altura -> time[" + j + "], jogador[" + i + "]...: ");
+          altura[j][i] = scanner.nextInt();
+          System.out.print("------------------------------------\n");
+        }
+        System.out.print("\n");
       }
-      System.out.print("\n");
     }
 
-    
     int contIdadeMaior, contPesoMaior, mediaIdade, idadesTimes[] = new int[TIMES];
     float mediaAltura;
     mediaAltura=contPesoMaior=contIdadeMaior=mediaIdade=0;
