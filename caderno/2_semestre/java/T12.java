@@ -16,26 +16,26 @@ public class T12 {
     int teclado, i, valores[] = new int[LINHAS];
     i=0;
     teclado=1;
-    Scanner tecladoLeitura = new Scanner(System.in);
-    
-    while(true){
+    try (Scanner tecladoLeitura = new Scanner(System.in)) {
+      while(true){
 
-      System.out.print("["+ (i+1) +"]: >> ");
-      teclado = tecladoLeitura.nextInt();
-      if (teclado <= 0) { break; }
-      valores[i] = teclado;
-      
-      i++;
-      if(i == LINHAS){
-        System.out.println();
-        for (int j=0; j < LINHAS; j++) {
-          System.out.println("["+(j+1)+"]: " + valores[j] + " -> ³(" + (Math.pow(valores[j], 3)) + ")  \t|\t ²(" + (Math.pow(valores[j], 2)) + ")");
+        System.out.print("["+ (i+1) +"]: >> ");
+        teclado = tecladoLeitura.nextInt();
+        if (teclado <= 0) { break; }
+        valores[i] = teclado;
+        
+        i++;
+        if(i == LINHAS){
+          System.out.println();
+          for (int j=0; j < LINHAS; j++) {
+            System.out.println("["+(j+1)+"]: " + valores[j] + " -> ³(" + (Math.pow(valores[j], 3)) + ")  \t|\t ²(" + (Math.pow(valores[j], 2)) + ")");
+          }
+          i=0;
+          System.out.println();
         }
-        i=0;
-        System.out.println();
-      }
-      
+        
 
+      }
     }
   }
 }
