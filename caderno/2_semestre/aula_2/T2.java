@@ -4,68 +4,55 @@
  * gere e imprima um vetor dos números não comuns aos vetores
 */
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Random;
 import java.util.Date;
+import java.util.List;
+import java.util.Set;
 
 public class T2 {
-  public static void main(String[] args) {
-    Random seed = new Random(new Date().getTime());
-    int TAM = 10;
-    int vet1[] = new int[TAM];
-    int vet2[] = new int[TAM];
-    int vet3[] = new int[TAM];
-    int vetCacheVet3[] = new int[TAM];
+  private static <T> Set<T> findDifference(List<T> vet1, List<T> vet2) {
+    Set<T> diff = new HashSet<>(vet1);
+    diff.removeAll(vet2);
+    return diff;
+  }
 
+  public static void main(String[] args) {
+    // semente aleatória pelos segundos xd
+    Random seed = new Random(new Date().getTime());
+
+    //tamanho piloto
+    int TAM = 10;
+
+    List<Integer> vet1 = new ArrayList<>();
+    List<Integer> vet2 = new ArrayList<>();
+    
     // preencher matriz vet1
     for (int i = 0; i < TAM; i++) {
-      vet2[i] = 1 + (seed.nextInt((TAM)));
+      vet1.add(1 + (seed.nextInt((TAM))));
     }
 
     // preencher matriz vet2
     for (int i = 0; i < TAM; i++) {
-      vet1[i] = 1 + (seed.nextInt((TAM)));
+      vet2.add(1 + (seed.nextInt((TAM))));
     }
-
-    // amarzenas numeros iqual entre vetores
-    int y=0;
-    for (int j = 0; j < TAM; j++) {
-      for (int i = 0; i < TAM; i++) {
-        if( vet1[j] == vet2[i]){
-          vetCacheVet3[y] = vet1[j];
-          y++;
-        }
-      }
+    
+    for (int i=0; i < vet1.size(); i++) {
+      System.out.println("vet1[" + i + "]: " + vet1.get(i));
+    }System.out.println();
+    
+    for (int i = 0; i < vet2.size(); i++) {
+      System.out.println("vet2[" + i + "]: " + vet2.get(i));
+    }System.out.println();
+    
+    Set<Integer> duplicates = findDifference(vet1, vet2);
+    Set<Integer> vet3 = duplicates;
+    
+    int x=0;
+    for (int integer : vet3) {
+      System.out.println("vet3[" + x + "]: " + integer);
+      x++;
     }
-
-    //Remove elementos com valor duplicado 
-    int k_remove, i_remove, j_remove;
-    k_remove=i_remove=j_remove=0;
-    /* Remove elementos com valor duplicado */
-    for (i_remove = 0; i_remove < TAM; i_remove++) {
-      for (j_remove = i_remove + 1; j_remove < TAM;) {
-        if (vetCacheVet3[i_remove] == vetCacheVet3[i_remove]) {
-          for (k_remove = j_remove; k_remove < TAM; k_remove++)
-            vetCacheVet3[k_remove] = vetCacheVet3[k_remove + 1];
-
-          TAM--;
-        } else {
-          j_remove++;
-        }
-      }
-    }
-
-    System.out.print("\n");
-    for (int i = 0; i < vet1.length; i++) {
-      System.out.print("\nvet1[" + (i + 1) + "]: " + vet1[i]);
-    }
-    System.out.print("\n");
-    for (int i = 0; i < vet2.length; i++) {
-      System.out.print("\nvet2[" + (i + 1) + "]: " + vet2[i]);
-    }
-    System.out.print("\n");
-    for (int i = 0; i < vetCacheVet3.length; i++) {
-      System.out.print("\nvet3[" + (i + 1) + "]: " + vetCacheVet3[i]);
-    }
-
   }
 }
