@@ -1,0 +1,42 @@
+======================================
+ - PK é uma chave estrangeira (public key)
+ - Um atributo-chave é um que é uma PK ou
+ parte de uma PK composta
+======================================
+
+Primeira Forma Normal
+ Uma tabela está na 1º forma normal quando
+ - Somente possui valores atômicos 
+ - Não há grupos de atributos repetidos
+ (há apenas um dado por culuna nas linhas)
+ - Existe uma chave primária 
+ - Relação não possui arubutos multivalorados
+ ou relações aninhadas
+ - Um valor atómico é indivisível
+ - Como por exemplo um campo de endereço 
+ possui subdomínios Rua, Números e CEP
+ esses itens devem ser separados no processo
+ e normalização
+ - Cada informação deve ser colocada em 
+ um compo diferente
+=======================================
+Segunda forma normal
+ Uma tabela está na 2º forma normal quando
+ - Baseada no conceito de Dependência 
+ Funcional total
+ - Um esquema de relação R está na 2FN 
+ se cada atributo não-chave de R for 
+ total e funcionalmente dependente da
+ PK de R.
+ - Para testar a 2FN, testamos as
+ dependências funcionais cujos atributos
+ fazem parte da chave primária 
+ - Caso a PK tenha um único atributo,
+ esse teste não precisa ser aplicado
+ - Está na 1ªFN 
+ - Todos os atributos não chaves são 
+ funcionalmente dependentes de todas as
+ partes da chave primária
+ - Não existe dependências parciais
+ - Caso contrário, deve-se gerar uma nova
+ tabela com os dados
