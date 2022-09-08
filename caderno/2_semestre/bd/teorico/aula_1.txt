@@ -1,0 +1,9 @@
+<- (pé de galinha)
+
+---------|-|- um e apenas um (1)
+
+----------|<- de um a muitos (1 .. *)
+
+----------0|- zero ou um (0 .. 1)
+
+----------0<- De zero ou( 0 .. *)

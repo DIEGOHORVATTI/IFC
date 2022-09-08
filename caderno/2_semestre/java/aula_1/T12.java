@@ -23,7 +23,7 @@ public class T12 {
         teclado = tecladoLeitura.nextInt();
         if (teclado <= 0) { break; }
         valores[i] = teclado;
-        
+
         i++;
         if(i == LINHAS){
           System.out.println();
@@ -33,8 +33,6 @@ public class T12 {
           i=0;
           System.out.println();
         }
-        
-
       }
     }
   }
