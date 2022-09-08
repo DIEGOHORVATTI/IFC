@@ -1,0 +1,98 @@
+=================|info|=================
+  Data Warehouse: "Armazém de dados", ou ainda depósito de dados, é utilizado para 
+armazenar informações relativas às atividades de uma organização 
+em bancos de dados, de forma consolidada. 
+========================================
+
+ O cenário escolhido para ilustrar esse estudo de caso é o de uma biblioteca
+universitária. Essa biblioteca faz parte de da rede federal do Instituto federal catarinence,
+ela conta com mais de 20 mil usuários e é conhecida nacionalmente pelo
+seu vasto acervo.
+ Como a área de pesquisa desse Instituto não para de crescer, a reitoria
+disponibilizou uma verba bastante significativa para a construção de um Data Warehouse que
+auxilie na tomada de decisão.
+
+Como base de dados para a carga do Data Warehouse, existe um sistema nacional que
+gerencia as operações diárias dessa biblioteca.
+
+
+=========================|Base de negócio|=========================
+Livro{
+  espesificações{
+    Cada livro tem pelo menos um ou mais autores.
+    cada livro tem tem pelo tem pelo menos 5 ou mais exemplares.
+  } 
+  entidades{
+    Cada livro tem um e apenas um nome.
+    cada livro tem pelo menos um ou mais assuntos.  
+    Cada livro tem um e apenas um código de identificação.
+  }
+}
+
+Exemplares{
+  entidades{
+    Cada exemplar tem uma e apenas uma data de aquisição.
+    Cada exemplar tem um e apenas um código de identificação.
+  }
+}
+
+Exemplares_Associado{
+  espesificações{
+    cada E.A depende de pelo menos uma ou mais cidades.
+  }
+  entidades{
+    Numero de E.A. 
+    Cada E.A tem um e apenas um nome simples.
+    Cada E.A tem um e apenas um código de associado.
+    cada E.A tem uma e apenas uma data de emprestimo.
+    cada E.A tem uma e apenas uma data de devolução.
+    Cada E.A tem um e apenas um código de identificação.
+  }
+}
+
+Multa{
+  espesificações{
+    cada multa depende de pelo menos uma ou mais Exemplares_Associados.
+  }
+  entidades{
+    Cada multa tem um e apenas um nome simples.
+    Cada multa tem um e apenas um código de associado.
+    cada multa tem uma e apenas uma data de emprestimo.
+    cada multa tem uma e apenas uma data de devolução.
+    Cada multa tem um e apenas um código de identificação.
+  }
+}
+
+Autores{
+  espesificações{
+    cada autor escreveu pelo menos 1 livro
+    cada autor  tem um nome
+  }
+  entidades{
+    Cada autor tem pelo menos um sobre nome.
+    Cada autor tem um e apenas um nome simples.
+    Cada autor tem um e apenas um código de identificação.
+  }
+}
+
+Associados{
+  espesificações{
+    cada associado pode ou não tem um exemplar
+  }
+  entidades{
+    Cada associado tem pelo menos um sobre nome.
+    Cada associado tem um e apenas um nome simples.
+    Cada associado tem um e apenas um endereço
+    associado_endereço{
+      estado,
+      cidade,
+      bairro,
+      rua,
+      numero
+    }
+    Cada associado tem pelo menos um telefone.
+    Cada associado tem pelo menos um email.
+    Cada associado tem uma e apenas uma data de nacimento.
+    Cada associado tem um e apenas um código de identificação.
+  }
+}

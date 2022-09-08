@@ -1,5 +1,6 @@
 ======================================
- - PK é uma chave estrangeira (public key)
+ - PK Chave Primaria (Primary Key)
+ - FK é uma chave estrangeira (public key)
  - Um atributo-chave é um que é uma PK ou
  parte de uma PK composta
 ======================================
