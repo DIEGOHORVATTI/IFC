@@ -1,9 +1,86 @@
 <- (pé de galinha)
 
----------|-|- um e apenas um (1)
+(minimo, maximo) -> (x, y)
+
+---------|-|- um e apenas um (1) ou (1, 1)
 
 ----------|<- de um a muitos (1 .. *)
 
 ----------0|- zero ou um (0 .. 1)
 
 ----------0<- De zero ou( 0 .. *)
+
+->|-------|<- Muitos para muitos
+
+
+============================================
+
+Notações gráficas mais utilizadas em modelagem
+ - IDEF1X
+ - Bachman
+ - Min-Max
+ - Pé de Galinha (Crow's Foot)
+ - Martin
+ - UML
+ - Peter Chen
+
+==================================
+Um autor escreve um ou mais livros
+
+=================================
+_______________________________________
+|PARA SABER AS DEPENDENCIAS A FORMA   |
+|MAIS FÁCIL É PERGUNTAR A UMA ENTIDADE|
+|SOBRE A QUEM ELA DEPENDE             |
+---------------------------------------
+---------------------------------
+Dependência Funcional
+ex: x -> y = x determina y ou y é determinado por x
+---------------------------------
+Dependência Funcional Total
+ex: quantidades de protudos exige
+todos as entiddes ao emsmo tempo de 
+uma tabela 
+____________________
+|Item_Pedido       |
+|__________________|
+|PK | Num_Pedido   |
+|PK | Cod_Produto  |
+|   | Qunat_Produto|
+|-------------------
+---------------------------------
+Dependência Funcional Parcial
+ex: Quando uma entidade não depende de todas
+as entidades de uma tabela
+______________________
+|Matrículas          |
+|____________________|
+|PK | ID_Aluno       |
+|PK | Cod_Disciplina |
+|   | Nome_Disciplina|
+|   | Data_Início    |
+|---------------------
+------------------------------------
+Dependência Funcional Transitiva
+ex: Orre qunado um entidade não depende 
+diretamente de uma chave primária nem 
+parcialmente mas depende de um outro compo não-chave
+____________________
+|Pedido            |
+|__________________|
+|PK | Num_Pedido   |
+|   | Prazo_Entrega|
+|PK | Cód_Vendedor |
+|   | Nome_Vendedor|
+|-------------------
+Nome do vendedor não depende do numero
+de pedidos nem do prazo de entrega
+mais sim do código do vendedos
+----------------------------------------
+Dependêcia Multivalorada
+A ->> B
+ex: quando para cada  valor de um 
+atributo A existir um conjunto de 
+atributos associados porem independentes
+entre si
+
