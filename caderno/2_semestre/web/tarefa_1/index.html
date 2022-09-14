@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tarefa 1</title>
+</head>
+<!--
+Para oganizar os componentes na tela, 
+podemos utilizar as propriedades CSS float e clear. 
+
+Utilize essas propriedades para criar uma página web com HTML e CSS 
+que contenha pelo menos um título, um parágrafo e uma imagem. 
+O layout precisa estar organizado duas colunas. 
+Faça isso utilizando a propriedade float.
+-->
+<style>
+  @import url("https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css");
+
+  html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+  }
+
+  :root{
+    --border: 0.5rem;
+  }
+
+  h1,h2,h3,h4,p,span,figcaption{
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #card_wallpaper{
+    position: relative;
+    margin: 0.5rem;
+    padding: 0.1rem;
+    border-radius: var(--border);
+    background-color: rgba(207, 0, 145, 0.644);
+  }
+
+  #card_wallpaper_text{
+    color: white;
+    font-size: 12pt;
+  }
+
+  .title_obras{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #container{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  .card{
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 20px 0;
+  }
+  
+  .card .image_rand{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .card .card_wallpaper_img{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border);
+    object-fit: cover;
+  }
+
+
+</style>
+
+<body>
+  <header>
+    <div>
+      <h1 class="title_obras">
+        Papeis de parede aleatórios
+      </h1>
+    </div>
+  </header>
+
+  <div id="container">
+    <article class="card">
+      <div class="image_rand">
+        <figcaption class="card_wallpaper_text"></figcaption>
+        <figure class="card_wallpaper_body"></figure>
+      </div>
+    </article>
+    <article class="card">
+      <div class="image_rand">
+        <figcaption class="card_wallpaper_text"></figcaption>
+        <figure class="card_wallpaper_body"></figure>
+      </div>
+    </article>
+  </div>
+
+</body>
+<script>
+
+  const GITHUB_URL = 'https://raw.githubusercontent.com/DIEGOHORVATTI/wallpaper/main/'
+  function getRandomIntInclusive(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
+  let img_1 = new Image();
+  function image_1() {
+    let RAND = getRandomIntInclusive(1, 421);
+    img_1.src = `${GITHUB_URL}${RAND}.png`;
+    img_1.className = "card_wallpaper_img";
+    document.getElementsByClassName('card_wallpaper_body')[0].appendChild(img_1);
+    document.getElementsByClassName('card_wallpaper_text')[0].innerHTML = `Numero img: ${RAND}`;
+  }
+  
+  let img_2 = new Image();
+  function image_2() {
+    let RAND = getRandomIntInclusive(1, 421);
+    img_2.src = `${GITHUB_URL}${RAND}.png`;
+    img_2.className = "card_wallpaper_img";
+    document.getElementsByClassName('card_wallpaper_body')[1].appendChild(img_2);
+    document.getElementsByClassName('card_wallpaper_text')[1].innerHTML = `Numero img: ${RAND}`;
+  }
+  
+  image_1(); image_2();
+
+  setInterval(image_1, 10000);
+  setInterval(image_2, 20000);
+</script>
+</html>
