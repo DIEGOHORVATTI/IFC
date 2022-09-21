@@ -4,17 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
   <title>tarefa 1</title>
 </head>
-<!--
-Para oganizar os componentes na tela, 
-podemos utilizar as propriedades CSS float e clear. 
 
-Utilize essas propriedades para criar uma página web com HTML e CSS 
-que contenha pelo menos um título, um parágrafo e uma imagem. 
-O layout precisa estar organizado duas colunas. 
-Faça isso utilizando a propriedade float.
--->
 <style>
   @import url("https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css");
   html,body{
@@ -25,6 +18,13 @@ Faça isso utilizando a propriedade float.
 
   :root{
     --border: 0.5rem;
+  }
+
+  .kapa{
+    text-decoration: none;
+    display: inline;
+    color: white;
+    font-size: 20pt;
   }
 
   h1,h2,h3,h4,p,span,figcaption{
@@ -98,12 +98,6 @@ Faça isso utilizando a propriedade float.
         <figure class="card_wallpaper_body"></figure>
       </div>
     </article>
-    <article class="card">
-      <div class="image_rand">
-        <figcaption class="card_wallpaper_text"></figcaption>
-        <figure class="card_wallpaper_body"></figure>
-      </div>
-    </article>
   </div>
 
 </body>
@@ -115,26 +109,16 @@ Faça isso utilizando a propriedade float.
   }
   
   let img_1 = new Image();
-  function image_1() {
+  img_1.className = "card_wallpaper_img";
+  document.getElementsByClassName('card_wallpaper_body')[0].appendChild(img_1);
+  
+  function image() {
     let RAND = getRandomIntInclusive(1, 421);
     img_1.src = `${GITHUB_URL}${RAND}.png`;
-    img_1.className = "card_wallpaper_img";
-    document.getElementsByClassName('card_wallpaper_body')[0].appendChild(img_1);
     document.getElementsByClassName('card_wallpaper_text')[0].innerHTML = `Numero img: ${RAND}`;
   }
   
-  let img_2 = new Image();
-  function image_2() {
-    let RAND = getRandomIntInclusive(1, 421);
-    img_2.src = `${GITHUB_URL}${RAND}.png`;
-    img_2.className = "card_wallpaper_img";
-    document.getElementsByClassName('card_wallpaper_body')[1].appendChild(img_2);
-    document.getElementsByClassName('card_wallpaper_text')[1].innerHTML = `Numero img: ${RAND}`;
-  }
-  
-  image_1(); image_2();
-
-  setInterval(image_1, 10000);
-  setInterval(image_2, 20000);
+  image();
+  setInterval(image, 10000);
 </script>
 </html>
