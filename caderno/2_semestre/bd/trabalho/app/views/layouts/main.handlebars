@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banco de dados</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.min.css" rel="stylesheet"
+      type="text/css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <!-- Component Start -->
+      <divclass="flex flex-col w-screen h-screen overflow-auto text-gray-100 bg-gradient-to-tr from-blue-200 via-indigo-200 to-pink-200">
+        <div class="flex items-center flex-shrink-0 w-full h-16 px-10 bg-opacity-75">
+          <h3 class="text-gray-100" style="font-size: 20pt;">
+            <i class="fas fa-book"></i>
+          </h3>
+          <input class="flex items-center h-10 px-4 ml-10 text-sm bg-gray-200 rounded-full focus:outline-none focus:ring"
+            type="search" placeholder="Pesquise um livro...">
+          <div class="ml-10">
+            <a class="mx-2 text-sm font-semibold text-gray-100 hover:text-indigo-300" href="/">Livros</a>
+            <a class="mx-2 text-sm font-semibold text-gray-100 hover:text-indigo-300" href="/users/create">Adicionar Livro</a>
+          </div>
+          <buton class="flex items-center justify-center w-8 h-8 ml-auto overflow-hidden rounded-full cursor-pointer">
+            <img
+              src="https://avatars.githubusercontent.com/u/72998710?v=4"
+              alt="">
+          </buton>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+      {{{ body }}}
+    </div>
+
+  </body>
+</html>

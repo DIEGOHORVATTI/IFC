@@ -10,4 +10,4 @@ um controle, guardando informações como:
 nome, endereço, telefone e data de nascimento.
 Para os médicos, é importante saber: CRM,
 nome, telefone celular e especialidade.
-<img src="./Conceitual_2.png" />
+<img src="./Conceitual_2.png" />212121
