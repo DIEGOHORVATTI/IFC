@@ -1,49 +1,21 @@
+<!DOCTYPE html>
+
 <h1>Adicione um Livro</h1>
 <form action="/users/create" method="POST" class="form">
-  
+
   {{! Titulo livro }}
   <div class="form-control">
     <label for="name">Titulo livro:</label>
-    <input 
-      class="bg-black opacity-50 border border-gray-400 rounded" 
-      type="text" 
-      name="name_livro" 
-      placeholder="Digite o nome do livro"
-    />
+    <input class="bg-black opacity-50 border border-gray-400 rounded" type="text" name="name"
+      placeholder="Digite o nome do livro" />
   </div>
   
   {{! Descrição do Livro }}
   <div class="form-control">
     <label for="occupation">Descrição do Livro:</label>
-    <input 
-      class="bg-black text-white opacity-50 border border-gray-400 rounded" type="text" 
-      name="descricao_livro" 
-      placeholder="Digite a descrição do livro" 
-    />
+    <input class="bg-black text-white opacity-50 border border-gray-400 rounded" type="text" name="occupation"
+      placeholder="Digite a descrição do livro" />
   </div>
   
-  {{! Autor do Livro }}
-  <div class="form-control">
-    <label for="livro-autor">Autor do Livro:</label>
-    <input 
-      class="bg-black text-white opacity-50 border border-gray-400 rounded" 
-      type="text" name="autor_livro"
-      placeholder="Autor do Livro" 
-    />
-  </div>
-
-  {{! Ano do Livro }}
-  <div class="form-control">
-    <label for="livro-ano">Autor do Livro:</label>
-    <input 
-      class="bg-black text-white opacity-50 border border-gray-400 rounded" 
-      type="date" name="autor_livro"
-      placeholder="Autor do Livro" />
-  </div>
-
-  <div class="form-control form-checkbox">
-    <input type="checkbox" name="newsletter" checked>
-    <label for="newsletter">Aceito os termos</label>
-  </div>
   <button class="bg-transparent hover:bg-white hover:text-black border border-gray-400 rounded shadow text-white font-bold py-2 px-4 rounded-full" type="submit" value="Cadastrar">Cadastrar</button>
 </form>

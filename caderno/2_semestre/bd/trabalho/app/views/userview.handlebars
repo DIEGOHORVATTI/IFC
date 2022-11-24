@@ -1,3 +1,21 @@
 <a href="/">Voltar</a>
-<h1>{{user.name}}</h1>
-<p>{{user.occupation}}</p>
+
+<!-- This is an example component -->
+<div class='flex sm:flex-row flex-col space-y-12 sm:space-x-12 flex-row w-full items-center justify-center'>
+  <div
+    class='flex flex-wrap flex-row sm:flex-col justify-center items-center w-full sm:w-3/4 p-5 bg-grey rounded-md shadow-xl border-l-4 border-blue-300'>
+    <div class="flex justify-between w-full">
+      <div>
+        <div style="padding-top: 0.1em; padding-bottom: 0.1rem"
+          class="flex items-center text-xs px-3 bg-blue-200 text-blue-800 rounded-full">ativo</div>
+      </div>
+    </div>
+    <div>
+      <div class="font-bold text-4xl">
+        <h4>{{user.name}}</h4>
+      </div>
+      <div class="font-bold text-sm">
+        <p>{{user.occupation}}</p>
+      </div>
+    </div>
+</div>
