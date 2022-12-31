@@ -1,34 +1,16 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "tarefa_2",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "tsc:watch": "sass --watch --color --trace ./styles.scss ./src/css/styles.min.css --style=compressed --no-source-map | lolcat",
+    "sass:watch": "tsc --watch --strict --lib DOM,DOM.Iterable,ES6 --target ES6 ./index.ts --target esnext --outfile ./src/js/main.js --removecomments && esbuild ./src/js/main.js --minify --outfile='./src/js/main.min.js' | lolcat",
+    "tsc:compiler": "esbuild ./src/js/main.js --minify --outfile='./src/js/main.min.js'",
+    "sass:compiler": "sass --trace ./styles.scss ./src/css/styles.min.css --style=compressed --no-source-map",
+    "dev": "yarn sass:watch & yarn tsc:watch",
+    "build": "yarn sass:compiler & yarn tsc:compiler"
   },
-  "dependencies": {
-    "@types/node": "18.11.9",
-    "@types/react": "18.0.25",
-    "@types/react-dom": "18.0.9",
-    "eslint": "8.28.0",
-    "eslint-config-next": "13.0.5",
-    "next": "13.0.5",
-    "normalize.css": "^8.0.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "styled-components": "^5.3.6",
-    "typescript": "4.9.3"
-  },
-  "devDependencies": {
-    "@babel/preset-typescript": "^7.18.6",
-    "@types/styled-components": "^5.1.26",
-    "babel-plugin-styled-components": "^2.0.7",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "2.8.0",
-    "typescript-styled-plugin": "^0.18.2"
-  }
+  "repository": "git@github.com:DIEGOHORVATTI/webdsigner_dom_exercicios.git",
+  "author": "div-leadeasy <diego-leadeasy@outlook.com.br>",
+  "license": "MIT"
 }

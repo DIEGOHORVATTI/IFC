@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" id="selectTheme">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+    <link rel="stylesheet" href="./public/normalize.min.css">
+    <link rel="stylesheet" href="./src/css/styles.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <form>
+        <button 
+          type="button" 
+          id="dark" 
+          class="right" 
+          onclick="trocaMode()"
+        >
+          💡
+        </button>
+        <legend>Login Form</legend>
+        <fieldset>
+          <p class="mensagem"></p>
+          <label for="email">email:</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Seu e-mail *" />
+          <span 
+            role="alert" 
+            id="email-error" 
+            aria-hidden="true"
+            required maxlength="3"
+          >
+            Informe seu e-mail
+          </span>
+
+          <label for="senha">senha:</label>
+          <input 
+            type="password" 
+            id="senha" 
+            name="senha" 
+            placeholder="Sua senha *" />
+          <span 
+            role="alert" 
+            id="senha-error" 
+            aria-hidden="true"
+          >
+            Informe sua senha
+          </span>
+        </fieldset>
+        <button
+          id="submit"
+          type="submit" 
+          name="acessar" 
+          onclick="validate()"
+          <!-- disabled="true" -->
+        >
+          Acessar
+        </button>
+        <a class="clear" href="#" name="limpar">Limpar</a>
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>Lista de E-mails</h2>
+      <ul id="lista"></ul>
+    </div>
+
+    <script src="./src/js/main.min.js"></script>
+  </body>
+
+</html>

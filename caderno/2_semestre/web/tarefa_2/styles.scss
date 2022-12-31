@@ -1,0 +1,263 @@
+$color_1: var(--thema-color);
+$color_2: #677378;
+$color_3: #FFF;
+$white: white;
+$danger: red;
+$font-family_0: 'Franklin Gothic Medium', 'Arial Narrow',Arial, sans-serif;
+$font-family_1: Georgia, "Times New Roman", Times, serif;
+$font-family_2: 'Courier New', Courier, monospace;
+$background-color_1: var(--thema-background);
+$background-color_3: #e8eeef;
+$background-color_4: transparent;
+$background-color_5: #1abc9c;
+
+:root {
+  --thema-background: rgb(0, 0, 0, 1);
+  --thema-container: rgb(34, 34, 34);
+  --thema-color: rgb(255, 255, 255);
+  
+  &[data-theme='dark'] {
+    --thema-background: rgb(216, 216, 216);
+    --thema-container: rgb(255, 255, 255);
+    --thema-color: rgb(0, 0, 0);
+  }
+}
+
+
+*{
+  font-family: $font-family_0;
+}
+
+html{
+  background-color: $background-color_1;
+  transition: all 1s;
+  body {
+      .container {
+        max-width: 500px;
+        padding: 10px 20px;
+        background: var(--thema-container);
+        color: $color_1;
+        margin: 10px auto;
+        padding: 20px;
+        border-radius: 8px;
+        font-family: $font-family_1;
+        transition: all 0.5s;
+
+        .clear{
+          color: var(--thema-color);
+        }
+
+        .right {
+          font-size: 15pt;
+          align-items: center;
+          text-align: center;
+          background-color: var(--thema-color);
+          border-radius: 10px;
+          width: 2.2rem;
+          height: 2.2rem;
+          color: var(--thema-color);
+          border: none;
+          box-shadow: var(--thema-color) 1px 1px 1px, var(--thema-color) 0px 1px 30px, var(--thema-color) 1px 1px 1px;
+          transition: all 1s;
+          border-radius: 100%;
+          &:focus, &:active {
+            border: none;
+          }
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+
+        /* 
+          &:disabled {
+            position: relative;
+            display: block;
+            padding: 19px 39px 18px 39px;
+            color: #FFF;
+            margin: 0 auto;
+            font-size: 18px;
+            text-align: center;
+            font-style: normal;
+            width: 100%;
+            border: 1px solid #c4e6df;
+            border-width: 1px 1px 3px;
+            margin-bottom: 10px;
+            cursor: not-allowed;
+            pointer-events: none;
+            background: #c4e6df;
+          } 
+        */
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="datetime"],
+        input[type="email"],
+        input[type="number"],
+        input[type="search"],
+        input[type="time"],
+        input[type="url"],
+        textarea,
+        select {
+          font-family: Georgia, "Times New Roman", Times, serif;
+          background: rgba(255, 255, 255, .1);
+          border: none;
+          border-radius: 4px;
+          font-size: 15px;
+          margin: 0;
+          outline: 0;
+          padding: 10px;
+          width: 100%;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          background-color: #e8eeef;
+          color: #677378;
+          margin-top: 15px;
+        }
+      
+        input[type="text"]:focus,
+        input[type="date"]:focus,
+        input[type="datetime"]:focus,
+        input[type="email"]:focus,
+        input[type="number"]:focus,
+        input[type="search"]:focus,
+        input[type="time"]:focus,
+        input[type="url"]:focus,
+        textarea:focus,
+        select:focus {
+          background: #d2d9dd;
+        }
+
+        fieldset {
+          border: none;
+          padding: 0;
+          margin: 1rem 0 1rem 0;
+        }
+
+        legend {
+          font-size: 1.4em;
+          margin-bottom: 10px;
+        }
+
+        label {
+          display: block;
+          margin: 18px 0px -10px 0px;
+        }
+
+        textarea {
+          font-family: $font-family_1;
+          background: rgba(255, 255, 255, .1);
+          border: none;
+          border-radius: 0.4rem;
+          font-size: 15px;
+          margin: 0;
+          outline: 0;
+          padding: 10px;
+          width: 100%;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          background-color: $background-color_3;
+          color: $color_2;
+          margin-top: 15px;
+
+          &:focus {
+            background: #d2d9dd;
+          }
+        }
+
+        select {
+          font-family: $font-family_1;
+          background: rgba(255, 255, 255, .1);
+          border: none;
+          border-radius: 0.4rem;
+          font-size: 15px;
+          margin: 0;
+          outline: 0;
+          padding: 10px;
+          width: 100%;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          background-color: $background-color_3;
+          color: $color_2;
+          margin-top: 15px;
+
+          &:focus {
+            background: #d2d9dd;
+          }
+        }
+
+        form {
+          button[name="acessar"] {
+            position: relative;
+            display: block;
+            padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+            color: $color_3;
+            background: #1abc9c;
+            font-size: 18px;
+            text-align: center;
+            font-style: normal;
+            width: 100%;
+            border: 1px solid var(--thema-color);
+            border-radius: 0.4rem;
+            margin-bottom: 10px;
+            background-color: $background-color_4;
+            color: $color_1;
+
+            &:hover{
+              transition: all 0.3s;
+              background: var(--thema-background);
+              color: var(--thema-color);
+            }
+          }
+        }
+
+        input[type="submit"] {
+          &:hover {
+            background: #109177;
+          }
+        }
+
+        input[type="button"] {
+          &:hover {
+            background: #109177;
+          }
+        }
+
+        ul {
+          padding-left: 0;
+          max-height: 500px;
+          overflow: auto;
+
+          li {
+            list-style: none;
+            font-family: $font-family_2;
+            background-color: $background-color_5;
+            color: $white;
+            padding: 10px;
+            margin-bottom: 4px;
+          }
+        }
+      }
+
+      a[name="limpar"] {
+        text-align: center;
+        display: block;
+      }
+
+      .right {
+        float: right;
+      }
+
+      span[role="alert"] {
+        color: $danger;
+        display: none;
+      }
+
+      span[role="alert"].visivel {
+        display: block;
+      }
+  }
+}
