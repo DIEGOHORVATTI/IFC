@@ -9,19 +9,35 @@ import java.util.Scanner;
 
 public class T2 {
   public static void main(String[] args) {
-    
-    
+    double baseSalary = getSalarioBase();
+
+    double getSalary = new SalaryCalculator().calculateSalary(baseSalary);
+
+    System.out.println("\nO seu salário é de: " + getSalary + "R$");
+  }
+
+  private static double getSalarioBase() {
     System.out.print("Digite seu salário base: ");
-    try (Scanner salario = new Scanner(System.in)) {
-      double salarioB = salario.nextInt();
-      
-      double salreceber,grat,imp;
-
-      grat = (salarioB*5) / 100;
-      imp  = (salarioB*7) / 100;
-      salreceber=salarioB+grat-imp;
-      System.out.println("\nO seu salário é de: " + salreceber + "R$");
+    try (Scanner salary = new Scanner(System.in)) {
+      return salary.nextDouble();
     }
+  }
+}
 
+class SalaryCalculator {
+  public double calculateSalary(double salarioB) {
+    double gratificacao = calculateGratification(salarioB);
+
+    double taxes = calculateTaxes(salarioB);
+
+    return salarioB + gratificacao - taxes;
+  }
+
+  private double calculateGratification(double salarioB) {
+    return (salarioB * 5) / 100;
+  }
+
+  private double calculateTaxes(double salarioB) {
+    return (salarioB * 7) / 100;
   }
 }
